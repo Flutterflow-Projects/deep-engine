@@ -1,0 +1,267 @@
+// Automatic FlutterFlow imports
+import '/flutter_flow/flutter_flow_theme.dart';
+import '/flutter_flow/flutter_flow_util.dart';
+import 'index.dart'; // Imports other custom widgets
+import 'package:flutter/material.dart';
+// Begin custom widget code
+// DO NOT REMOVE OR MODIFY THE CODE ABOVE!
+
+import 'package:fl_chart/fl_chart.dart';
+
+class CustomChart extends StatefulWidget {
+  const CustomChart({
+    super.key,
+    this.width,
+    this.height,
+  });
+
+  final double? width;
+  final double? height;
+
+  @override
+  State<CustomChart> createState() => _CustomChartState();
+}
+
+class _CustomChartState extends State<CustomChart> {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              LegendItem(color: Colors.red, text: 'Critical'),
+              SizedBox(width: 10),
+              LegendItem(color: Colors.orange, text: 'High'),
+              SizedBox(width: 10),
+              LegendItem(color: Colors.yellow, text: 'Medium'),
+              SizedBox(width: 10),
+              LegendItem(color: Colors.blue, text: 'Low'),
+            ],
+          ),
+        ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: LineChart(
+              LineChartData(
+                backgroundColor: Colors.black,
+                gridData: FlGridData(
+                  show: true,
+                  drawVerticalLine: true,
+                  horizontalInterval: 1,
+                  verticalInterval: 1,
+                  getDrawingHorizontalLine: (value) {
+                    if (value == 1 || value == 2 || value == 3 || value == 4) {
+                      return FlLine(
+                        color: const Color(0xFF202020),
+                        strokeWidth: 1,
+                      );
+                    } else {
+                      return FlLine(
+                        color: Colors.transparent,
+                      );
+                    }
+                  },
+                  getDrawingVerticalLine: (value) {
+                    if (value == 0 ||
+                        value == 1 ||
+                        value == 2 ||
+                        value == 3 ||
+                        value == 4 ||
+                        value == 5 ||
+                        value == 6) {
+                      return FlLine(
+                        color: const Color(0xFF202020),
+                        strokeWidth: 1,
+                      );
+                    } else {
+                      return FlLine(
+                        color: Colors.transparent,
+                      );
+                    }
+                  },
+                ),
+                titlesData: FlTitlesData(
+                  show: true,
+                  leftTitles: AxisTitles(
+                    sideTitles: SideTitles(
+                      showTitles: true,
+                      getTitlesWidget: (value, meta) {
+                        final labels = {
+                          1: '1',
+                          2: '2',
+                          3: '4',
+                          4: '8',
+                          5: '16'
+                        };
+                        return Text(
+                          labels[value.toInt()] ?? '',
+                          style: TextStyle(color: Colors.white, fontSize: 12),
+                        );
+                      },
+                      interval: 1,
+                      reservedSize: 30,
+                    ),
+                  ),
+                  bottomTitles: AxisTitles(
+                    sideTitles: SideTitles(
+                      showTitles: true,
+                      getTitlesWidget: (value, meta) {
+                        const days = [
+                          'Mon',
+                          'Tue',
+                          'Wed',
+                          'Thu',
+                          'Fri',
+                          'Sat',
+                          'Sun'
+                        ];
+                        return Text(
+                          days[value.toInt()],
+                          style: TextStyle(color: Colors.white, fontSize: 12),
+                        );
+                      },
+                      interval: 1,
+                    ),
+                  ),
+                  topTitles:
+                      AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                  rightTitles:
+                      AxisTitles(sideTitles: SideTitles(showTitles: false)),
+                ),
+                borderData: FlBorderData(show: true),
+                minX: 0,
+                maxX: 6,
+                minY: 0,
+                maxY: 5,
+                lineBarsData: _getLineBarsData(),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+
+  List<LineChartBarData> _getLineBarsData() {
+    final spotsData = [
+      [
+        FlSpot(0, getPosition(2)),
+        FlSpot(1, getPosition(2)),
+        FlSpot(2, getPosition(2)),
+        FlSpot(3, getPosition(3.8)),
+        FlSpot(4, getPosition(3)),
+        FlSpot(5, getPosition(3)),
+        FlSpot(6, getPosition(1)),
+      ],
+      [
+        FlSpot(0, getPosition(3)),
+        FlSpot(1, getPosition(3.8)),
+        FlSpot(2, getPosition(3)),
+        FlSpot(3, getPosition(4)),
+        FlSpot(4, getPosition(4)),
+        FlSpot(5, getPosition(3.8)),
+        FlSpot(6, getPosition(7)),
+      ],
+      [
+        FlSpot(0, getPosition(5)),
+        FlSpot(1, getPosition(6)),
+        FlSpot(2, getPosition(3)),
+        FlSpot(3, getPosition(3)),
+        FlSpot(4, getPosition(4)),
+        FlSpot(5, getPosition(1.8)),
+        FlSpot(6, getPosition(2)),
+      ],
+      [
+        FlSpot(0, getPosition(5)),
+        FlSpot(1, getPosition(9)),
+        FlSpot(2, getPosition(8)),
+        FlSpot(3, getPosition(6)),
+        FlSpot(4, getPosition(4)),
+        FlSpot(5, getPosition(8)),
+        FlSpot(6, getPosition(7)),
+      ],
+    ];
+
+    final colors = [
+      Colors.red.withOpacity(0.1),
+      Colors.orange.withOpacity(0.1),
+      Colors.yellow.withOpacity(0.1),
+      Colors.blue.withOpacity(0.1),
+    ];
+
+    List<LineChartBarData> lines = [];
+
+    for (int i = spotsData.length - 1; i >= 0; i--) {
+      lines.add(
+        LineChartBarData(
+          spots: spotsData[i],
+          isCurved: false,
+          color: colors[i].withOpacity(1.0),
+          barWidth: 2,
+          isStrokeCapRound: true,
+          dotData: FlDotData(show: true),
+          belowBarData: BarAreaData(
+            show: true,
+            color: colors[i],
+          ),
+        ),
+      );
+    }
+
+    return lines;
+  }
+
+  double getPosition(double value) {
+    switch (value.toInt()) {
+      case 1:
+        return 1;
+      case 2:
+        return 2;
+      case 4:
+        return 3;
+      case 8:
+        return 4;
+      case 16:
+        return 5;
+      default:
+        if (value < 2) return 1 + (value - 1) / 1;
+        if (value < 4) return 2 + (value - 2) / 2;
+        if (value < 8) return 3 + (value - 4) / 4;
+        if (value < 16) return 4 + (value - 8) / 8;
+        return 5;
+    }
+  }
+}
+
+class LegendItem extends StatelessWidget {
+  final Color color;
+  final String text;
+
+  const LegendItem({required this.color, required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Container(
+          width: 10,
+          height: 10,
+          decoration: BoxDecoration(
+            color: color,
+            shape: BoxShape.circle,
+          ),
+        ),
+        SizedBox(width: 4),
+        Text(
+          text,
+          style: TextStyle(color: Colors.white, fontSize: 12),
+        ),
+      ],
+    );
+  }
+}
