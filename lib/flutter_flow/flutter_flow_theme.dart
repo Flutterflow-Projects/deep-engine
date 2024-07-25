@@ -200,7 +200,7 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color utilityWarning200 = const Color(0xFFFEDF89);
   late Color utilityWarning500 = const Color(0xFFF79009);
   late Color customColor1 = const Color(0xFFEEE3D5);
-  late Color hoverBg = const Color(0xFF191919);
+  late Color hoverBg = const Color(0xFFE8E8E8);
 }
 
 abstract class Typography {

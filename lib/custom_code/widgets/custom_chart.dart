@@ -13,10 +13,14 @@ class CustomChart extends StatefulWidget {
     super.key,
     this.width,
     this.height,
+    required this.textColor,
+    required this.borderColor,
   });
 
   final double? width;
   final double? height;
+  final Color textColor;
+  final Color borderColor;
 
   @override
   State<CustomChart> createState() => _CustomChartState();
@@ -33,13 +37,23 @@ class _CustomChartState extends State<CustomChart> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              LegendItem(color: Colors.red, text: 'Critical'),
+              LegendItem(
+                  color: Colors.red,
+                  text: 'Critical',
+                  textColor: widget.textColor),
               SizedBox(width: 10),
-              LegendItem(color: Colors.orange, text: 'High'),
+              LegendItem(
+                  color: Colors.orange,
+                  text: 'High',
+                  textColor: widget.textColor),
               SizedBox(width: 10),
-              LegendItem(color: Colors.yellow, text: 'Medium'),
+              LegendItem(
+                  color: Colors.yellow,
+                  text: 'Medium',
+                  textColor: widget.textColor),
               SizedBox(width: 10),
-              LegendItem(color: Colors.blue, text: 'Low'),
+              LegendItem(
+                  color: Colors.blue, text: 'Low', textColor: widget.textColor),
             ],
           ),
         ),
@@ -48,41 +62,23 @@ class _CustomChartState extends State<CustomChart> {
             padding: const EdgeInsets.symmetric(horizontal: 16.0),
             child: LineChart(
               LineChartData(
-                backgroundColor: Colors.black,
+                backgroundColor: Colors.transparent,
                 gridData: FlGridData(
                   show: true,
                   drawVerticalLine: true,
                   horizontalInterval: 1,
                   verticalInterval: 1,
                   getDrawingHorizontalLine: (value) {
-                    if (value == 1 || value == 2 || value == 3 || value == 4) {
-                      return FlLine(
-                        color: const Color(0xFF202020),
-                        strokeWidth: 1,
-                      );
-                    } else {
-                      return FlLine(
-                        color: Colors.transparent,
-                      );
-                    }
+                    return FlLine(
+                      color: widget.borderColor,
+                      strokeWidth: 1,
+                    );
                   },
                   getDrawingVerticalLine: (value) {
-                    if (value == 0 ||
-                        value == 1 ||
-                        value == 2 ||
-                        value == 3 ||
-                        value == 4 ||
-                        value == 5 ||
-                        value == 6) {
-                      return FlLine(
-                        color: const Color(0xFF202020),
-                        strokeWidth: 1,
-                      );
-                    } else {
-                      return FlLine(
-                        color: Colors.transparent,
-                      );
-                    }
+                    return FlLine(
+                      color: widget.borderColor,
+                      strokeWidth: 1,
+                    );
                   },
                 ),
                 titlesData: FlTitlesData(
@@ -100,7 +96,8 @@ class _CustomChartState extends State<CustomChart> {
                         };
                         return Text(
                           labels[value.toInt()] ?? '',
-                          style: TextStyle(color: Colors.white, fontSize: 12),
+                          style:
+                              TextStyle(color: widget.textColor, fontSize: 12),
                         );
                       },
                       interval: 1,
@@ -122,7 +119,8 @@ class _CustomChartState extends State<CustomChart> {
                         ];
                         return Text(
                           days[value.toInt()],
-                          style: TextStyle(color: Colors.white, fontSize: 12),
+                          style:
+                              TextStyle(color: widget.textColor, fontSize: 12),
                         );
                       },
                       interval: 1,
@@ -133,7 +131,10 @@ class _CustomChartState extends State<CustomChart> {
                   rightTitles:
                       AxisTitles(sideTitles: SideTitles(showTitles: false)),
                 ),
-                borderData: FlBorderData(show: true),
+                borderData: FlBorderData(
+                  show: true,
+                  border: Border.all(color: widget.borderColor),
+                ),
                 minX: 0,
                 maxX: 6,
                 minY: 0,
@@ -151,9 +152,9 @@ class _CustomChartState extends State<CustomChart> {
     final spotsData = [
       [
         FlSpot(0, getPosition(2)),
-        FlSpot(1, getPosition(2)),
+        FlSpot(1, getPosition(1)),
         FlSpot(2, getPosition(2)),
-        FlSpot(3, getPosition(3.8)),
+        FlSpot(3, getPosition(1)),
         FlSpot(4, getPosition(3)),
         FlSpot(5, getPosition(3)),
         FlSpot(6, getPosition(1)),
@@ -241,8 +242,10 @@ class _CustomChartState extends State<CustomChart> {
 class LegendItem extends StatelessWidget {
   final Color color;
   final String text;
+  final Color textColor;
 
-  const LegendItem({required this.color, required this.text});
+  const LegendItem(
+      {required this.color, required this.text, required this.textColor});
 
   @override
   Widget build(BuildContext context) {
@@ -259,7 +262,7 @@ class LegendItem extends StatelessWidget {
         SizedBox(width: 4),
         Text(
           text,
-          style: TextStyle(color: Colors.white, fontSize: 12),
+          style: TextStyle(color: textColor, fontSize: 12),
         ),
       ],
     );

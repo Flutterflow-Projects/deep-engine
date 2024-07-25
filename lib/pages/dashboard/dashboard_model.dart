@@ -1,5 +1,19 @@
-import '/components/sidebar/sidebar_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/pages/auth/components/dashboard/emerging_threats/emerging_threats_widget.dart';
+import '/pages/auth/components/dashboard/emerging_threats_mobile/emerging_threats_mobile_widget.dart';
+import '/pages/auth/components/dashboard/header/header_widget.dart';
+import '/pages/auth/components/dashboard/header_mobile/header_mobile_widget.dart';
+import '/pages/auth/components/dashboard/monthly_summary/monthly_summary_widget.dart';
+import '/pages/auth/components/dashboard/monthly_summary_mobile/monthly_summary_mobile_widget.dart';
+import '/pages/auth/components/dashboard/open_issues/open_issues_widget.dart';
+import '/pages/auth/components/dashboard/open_issues_numbers/open_issues_numbers_widget.dart';
+import '/pages/auth/components/dashboard/open_issues_numbers_mobile/open_issues_numbers_mobile_widget.dart';
+import '/pages/auth/components/dashboard/recent_issues_mobile/recent_issues_mobile_widget.dart';
+import '/pages/auth/components/dashboard/recent_scans/recent_scans_widget.dart';
+import '/pages/auth/components/dashboard/recent_scans_mobile/recent_scans_mobile_widget.dart';
+import '/pages/auth/components/dashboard/risk_trend/risk_trend_widget.dart';
+import '/pages/auth/components/dashboard/risk_trend_mobile/risk_trend_mobile_widget.dart';
+import '/pages/auth/components/sidebar/sidebar_widget.dart';
 import 'dashboard_widget.dart' show DashboardWidget;
 import 'package:flutter/material.dart';
 
@@ -75,128 +89,81 @@ class DashboardModel extends FlutterFlowModel<DashboardWidget> {
   bool mouseRegionHovered25 = false;
   // State field(s) for MouseRegion widget.
   bool mouseRegionHovered26 = false;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode;
-  TextEditingController? textController;
-  String? Function(BuildContext, String?)? textControllerValidator;
+  // Model for Header component.
+  late HeaderModel headerModel;
+  // Model for HeaderMobile component.
+  late HeaderMobileModel headerMobileModel;
+  // Model for OpenIssuesNumbers component.
+  late OpenIssuesNumbersModel openIssuesNumbersModel;
+  // Model for OpenIssues component.
+  late OpenIssuesModel openIssuesModel;
+  // Model for RiskTrend component.
+  late RiskTrendModel riskTrendModel;
+  // Model for MonthlySummary component.
+  late MonthlySummaryModel monthlySummaryModel;
+  // Model for RecentScans component.
+  late RecentScansModel recentScansModel;
+  // Model for EmergingThreats component.
+  late EmergingThreatsModel emergingThreatsModel;
+  // Model for OpenIssuesNumbersMobile component.
+  late OpenIssuesNumbersMobileModel openIssuesNumbersMobileModel;
+  // Model for RecentIssuesMobile component.
+  late RecentIssuesMobileModel recentIssuesMobileModel;
+  // Model for RiskTrendMobile component.
+  late RiskTrendMobileModel riskTrendMobileModel;
+  // Model for MonthlySummaryMobile component.
+  late MonthlySummaryMobileModel monthlySummaryMobileModel;
+  // Model for RecentScansMobile component.
+  late RecentScansMobileModel recentScansMobileModel;
+  // Model for EmergingThreatsMobile component.
+  late EmergingThreatsMobileModel emergingThreatsMobileModel;
   // State field(s) for MouseRegion widget.
   bool mouseRegionHovered27 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered28 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered29 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered30 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered31 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered32 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered33 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered34 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered35 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered36 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered37 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered38 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered39 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered40 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered41 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered42 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered43 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered44 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered45 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered46 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered47 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered48 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered49 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered50 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered51 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered52 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered53 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered54 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered55 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered56 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered57 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered58 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered59 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered60 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered61 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered62 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered63 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered64 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered65 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered66 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered67 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered68 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered69 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered70 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered71 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered72 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered73 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered74 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered75 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered76 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered77 = false;
-  // State field(s) for MouseRegion widget.
-  bool mouseRegionHovered78 = false;
   // Model for sidebar component.
   late SidebarModel sidebarModel;
 
   @override
   void initState(BuildContext context) {
+    headerModel = createModel(context, () => HeaderModel());
+    headerMobileModel = createModel(context, () => HeaderMobileModel());
+    openIssuesNumbersModel =
+        createModel(context, () => OpenIssuesNumbersModel());
+    openIssuesModel = createModel(context, () => OpenIssuesModel());
+    riskTrendModel = createModel(context, () => RiskTrendModel());
+    monthlySummaryModel = createModel(context, () => MonthlySummaryModel());
+    recentScansModel = createModel(context, () => RecentScansModel());
+    emergingThreatsModel = createModel(context, () => EmergingThreatsModel());
+    openIssuesNumbersMobileModel =
+        createModel(context, () => OpenIssuesNumbersMobileModel());
+    recentIssuesMobileModel =
+        createModel(context, () => RecentIssuesMobileModel());
+    riskTrendMobileModel = createModel(context, () => RiskTrendMobileModel());
+    monthlySummaryMobileModel =
+        createModel(context, () => MonthlySummaryMobileModel());
+    recentScansMobileModel =
+        createModel(context, () => RecentScansMobileModel());
+    emergingThreatsMobileModel =
+        createModel(context, () => EmergingThreatsMobileModel());
     sidebarModel = createModel(context, () => SidebarModel());
   }
 
   @override
   void dispose() {
     unfocusNode.dispose();
-    textFieldFocusNode?.dispose();
-    textController?.dispose();
-
+    headerModel.dispose();
+    headerMobileModel.dispose();
+    openIssuesNumbersModel.dispose();
+    openIssuesModel.dispose();
+    riskTrendModel.dispose();
+    monthlySummaryModel.dispose();
+    recentScansModel.dispose();
+    emergingThreatsModel.dispose();
+    openIssuesNumbersMobileModel.dispose();
+    recentIssuesMobileModel.dispose();
+    riskTrendMobileModel.dispose();
+    monthlySummaryMobileModel.dispose();
+    recentScansMobileModel.dispose();
+    emergingThreatsMobileModel.dispose();
     sidebarModel.dispose();
   }
 }
