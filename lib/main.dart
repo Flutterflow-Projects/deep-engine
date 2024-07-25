@@ -1,5 +1,6 @@
 import 'package:dio/browser.dart';
 import 'package:dio/dio.dart';
+import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
@@ -50,8 +51,13 @@ void main() async {
       return;
     }
     
+  final appState = FFAppState(); // Initialize FFAppState
+  await appState.initializePersistedState();
 
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (context) => appState,
+    child: const MyApp(),
+  ));
 }
 
 void _launchURL(String url) async {

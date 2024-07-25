@@ -11,10 +11,18 @@ class ChartTabs extends StatefulWidget {
     super.key,
     this.width,
     this.height,
+    required this.activeTextColor,
+    required this.activeTabBg,
+    required this.textColor,
+    required this.borderColor,
   });
 
   final double? width;
   final double? height;
+  final Color activeTextColor;
+  final Color activeTabBg;
+  final Color textColor;
+  final Color borderColor;
 
   @override
   State<ChartTabs> createState() => _ChartTabsState();
@@ -22,6 +30,7 @@ class ChartTabs extends StatefulWidget {
 
 class _ChartTabsState extends State<ChartTabs> {
   String selectedTab = 'Week';
+  String hoveredTab = '';
 
   @override
   Widget build(BuildContext context) {
@@ -48,30 +57,35 @@ class _ChartTabsState extends State<ChartTabs> {
       onExit: (event) => setState(() {
         hoveredTab = '';
       }),
-      child: Container(
-        padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
-        decoration: BoxDecoration(
-          color: selectedTab == text || hoveredTab == text
-              ? Color(0xFF191919)
-              : Colors.transparent,
-          borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(isLeft ? 10.0 : 0),
-            bottomLeft: Radius.circular(isLeft ? 10.0 : 0),
-            topRight: Radius.circular(isRight ? 10.0 : 0),
-            bottomRight: Radius.circular(isRight ? 10.0 : 0),
+      child: GestureDetector(
+        onTap: () => setState(() {
+          selectedTab = text;
+        }),
+        child: Container(
+          padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+          decoration: BoxDecoration(
+            color: selectedTab == text || hoveredTab == text
+                ? widget.activeTabBg
+                : Colors.transparent,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(isLeft ? 10.0 : 0),
+              bottomLeft: Radius.circular(isLeft ? 10.0 : 0),
+              topRight: Radius.circular(isRight ? 10.0 : 0),
+              bottomRight: Radius.circular(isRight ? 10.0 : 0),
+            ),
+            border: Border.all(color: widget.borderColor, width: 1.0),
           ),
-          border: Border.all(color: Color(0xFF202020), width: 1.0),
-        ),
-        child: Text(
-          text,
-          style: TextStyle(
-            color: Color(0xFFCECECE),
-            fontSize: 16.0,
+          child: Text(
+            text,
+            style: TextStyle(
+              color: selectedTab == text || hoveredTab == text
+                  ? widget.activeTextColor
+                  : widget.textColor,
+              fontSize: 16.0,
+            ),
           ),
         ),
       ),
     );
   }
-
-  String hoveredTab = '';
 }
