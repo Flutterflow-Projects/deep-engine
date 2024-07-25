@@ -1,6 +1,6 @@
+import '/components/dashboard/issues_number_card/issues_number_card_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/pages/auth/components/dashboard/issues_number_card/issues_number_card_widget.dart';
 import 'package:flutter/material.dart';
 import 'open_issues_numbers_model.dart';
 export 'open_issues_numbers_model.dart';

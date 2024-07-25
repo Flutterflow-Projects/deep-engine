@@ -1,6 +1,6 @@
+import '/components/dashboard/recent_issues_row/recent_issues_row_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/pages/auth/components/dashboard/recent_issues_row/recent_issues_row_widget.dart';
 import 'package:flutter/material.dart';
 import 'open_issues_model.dart';
 export 'open_issues_model.dart';

@@ -1,5 +1,5 @@
+import '/components/dashboard/recent_issues_mobile_card/recent_issues_mobile_card_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/pages/auth/components/dashboard/recent_issues_mobile_card/recent_issues_mobile_card_widget.dart';
 import 'recent_issues_mobile_widget.dart' show RecentIssuesMobileWidget;
 import 'package:flutter/material.dart';
 

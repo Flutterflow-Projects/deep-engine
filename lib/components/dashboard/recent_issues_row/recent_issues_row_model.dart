@@ -1,10 +1,10 @@
+import '/components/dashboard/badges/critical_severity/critical_severity_widget.dart';
+import '/components/dashboard/badges/location_production/location_production_widget.dart';
+import '/components/dashboard/badges/location_test_env/location_test_env_widget.dart';
+import '/components/dashboard/badges/low_severity/low_severity_widget.dart';
+import '/components/dashboard/badges/medium_severity/medium_severity_widget.dart';
+import '/components/dashboard/badges/production/production_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/pages/auth/components/dashboard/badges/critical_severity/critical_severity_widget.dart';
-import '/pages/auth/components/dashboard/badges/location_production/location_production_widget.dart';
-import '/pages/auth/components/dashboard/badges/location_test_env/location_test_env_widget.dart';
-import '/pages/auth/components/dashboard/badges/low_severity/low_severity_widget.dart';
-import '/pages/auth/components/dashboard/badges/medium_severity/medium_severity_widget.dart';
-import '/pages/auth/components/dashboard/badges/production/production_widget.dart';
 import 'recent_issues_row_widget.dart' show RecentIssuesRowWidget;
 import 'package:flutter/material.dart';
 

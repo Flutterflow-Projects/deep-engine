@@ -1,6 +1,6 @@
+import '/components/dashboard/recent_issues_mobile_card/recent_issues_mobile_card_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/pages/auth/components/dashboard/recent_issues_mobile_card/recent_issues_mobile_card_widget.dart';
 import 'package:flutter/material.dart';
 import 'recent_issues_mobile_model.dart';
 export 'recent_issues_mobile_model.dart';

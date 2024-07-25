@@ -1,5 +1,5 @@
+import '/components/dashboard/issues_number_mobile_card/issues_number_mobile_card_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/pages/auth/components/dashboard/issues_number_mobile_card/issues_number_mobile_card_widget.dart';
 import 'open_issues_numbers_mobile_widget.dart'
     show OpenIssuesNumbersMobileWidget;
 import 'package:flutter/material.dart';

@@ -1,5 +1,5 @@
+import '/components/dashboard/issues_number_card/issues_number_card_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/pages/auth/components/dashboard/issues_number_card/issues_number_card_widget.dart';
 import 'open_issues_numbers_widget.dart' show OpenIssuesNumbersWidget;
 import 'package:flutter/material.dart';
 

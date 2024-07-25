@@ -1,7 +1,7 @@
+import '/components/dashboard/badges/critical_severity/critical_severity_widget.dart';
+import '/components/dashboard/badges/low_severity/low_severity_widget.dart';
+import '/components/dashboard/badges/medium_severity/medium_severity_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/pages/auth/components/dashboard/badges/critical_severity/critical_severity_widget.dart';
-import '/pages/auth/components/dashboard/badges/low_severity/low_severity_widget.dart';
-import '/pages/auth/components/dashboard/badges/medium_severity/medium_severity_widget.dart';
 import 'recent_issues_mobile_card_widget.dart'
     show RecentIssuesMobileCardWidget;
 import 'package:flutter/material.dart';
