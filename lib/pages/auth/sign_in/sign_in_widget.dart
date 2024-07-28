@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -682,7 +683,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                               ),
                                             ),
                                             TextSpan(
-                                              text: ' Sign In',
+                                              text: ' Sign up',
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
@@ -694,6 +695,13 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w600,
                                                   ),
+                                              mouseCursor:
+                                                  SystemMouseCursors.click,
+                                              recognizer: TapGestureRecognizer()
+                                                ..onTap = () async {
+                                                  context.pushNamed(
+                                                      'CreateAnAccount');
+                                                },
                                             )
                                           ],
                                           style: FlutterFlowTheme.of(context)
