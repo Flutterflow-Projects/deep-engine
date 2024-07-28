@@ -13,8 +13,8 @@ import 'package:universal_html/html.dart' as html;
 import 'register_auth_service.dart';
 
 Future oryCreateBrowserRegistrationFlow(
-    Future Function(String? errorMsg)? onErrorRegistration,
-    Future Function()? onSuccessfulRegistration) async {
+    Future Function(String? errorMsg) onErrorRegistration,
+    Future Function() onSuccessfulRegistration) async {
   // Add your function code here!
   final registrationFlow = await AuthService().createBrowserRegistrationFlow();
   FFAppState().oryPasskeyCreateData = AuthService()
@@ -33,5 +33,11 @@ Future oryCreateBrowserRegistrationFlow(
     final registrationResult = await AuthService()
         .updateBrowserRegistrationFlow(FFAppState().oryFlowId, email,
             passkeyRegister, FFAppState().oryCsrfToken);
+
+    if (registrationResult == null) {
+      onErrorRegistration!.call("You might have already used this passkey.");
+    } else {
+      onSuccessfulRegistration!.call();
+    }
   });
 }
