@@ -23,11 +23,12 @@ Future oryCreateBrowserRegistrationFlow(BuildContext context) async {
   html.window.onMessage.listen((event) {
     print(event);
     print(event.data);
+    Map<String, dynamic> jsonMap = jsonDecode(event.data);
 
-    AuthService().updateBrowserRegistrationFlow(
-        FFAppState().oryFlowId,
-        event.data.email,
-        event.data.passkey_register,
-        FFAppState().oryCsrfToken);
+    var passkeyRegister = jsonMap['passkey_register'];
+    var email = jsonMap['email'];
+
+    AuthService().updateBrowserRegistrationFlow(FFAppState().oryFlowId, email,
+        passkeyRegister, FFAppState().oryCsrfToken);
   });
 }
