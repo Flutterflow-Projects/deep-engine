@@ -3,14 +3,6 @@ import 'create_an_account_widget.dart' show CreateAnAccountWidget;
 import 'package:flutter/material.dart';
 
 class CreateAnAccountModel extends FlutterFlowModel<CreateAnAccountWidget> {
-  ///  Local state fields for this page.
-
-  String? flow;
-
-  String? passkeyCreateData;
-
-  String? csrfToken;
-
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
