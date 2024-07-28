@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 
 import 'package:built_value/json_object.dart';
 import 'package:dio/dio.dart';
+import 'package:dio/browser.dart';
 import 'package:one_of/one_of.dart';
 import 'package:universal_html/html.dart';
 
@@ -63,7 +64,7 @@ class AuthService {
   static final AuthService _singleton = AuthService._internal();
   bool _isInitialized = false;
 
-  factory AuthService(Dio? dio) {
+  factory AuthService([Dio? dio]) {
     if (dio != null && !_singleton._isInitialized) {
       _singleton._client = OryClient(dio: dio);
       _singleton._ory = _singleton._client.getFrontendApi();
