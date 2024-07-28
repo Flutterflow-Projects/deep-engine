@@ -12,7 +12,9 @@ import 'package:universal_html/html.dart' as html;
 
 import 'register_auth_service.dart';
 
-Future oryCreateBrowserRegistrationFlow(BuildContext context) async {
+Future oryCreateBrowserRegistrationFlow(
+    Future Function(String? errorMsg)? onErrorRegistration,
+    Future Function()? onSuccessfulRegistration) async {
   // Add your function code here!
   final registrationFlow = await AuthService().createBrowserRegistrationFlow();
   FFAppState().oryPasskeyCreateData = AuthService()
@@ -22,15 +24,14 @@ Future oryCreateBrowserRegistrationFlow(BuildContext context) async {
   FFAppState().oryCsrfToken =
       AuthService().getCSRFTokenFromRegistrationFlowByName(registrationFlow!);
 
-  html.window.onMessage.listen((event) {
-    print(event);
-    print(event.data);
+  html.window.onMessage.listen((event) async {
     Map<String, dynamic> jsonMap = jsonDecode(event.data);
 
     var passkeyRegister = jsonMap['passkey_register'];
     var email = jsonMap['email'];
 
-    AuthService().updateBrowserRegistrationFlow(FFAppState().oryFlowId, email,
-        passkeyRegister, FFAppState().oryCsrfToken);
+    final registrationResult = await AuthService()
+        .updateBrowserRegistrationFlow(FFAppState().oryFlowId, email,
+            passkeyRegister, FFAppState().oryCsrfToken);
   });
 }
