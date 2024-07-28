@@ -27,10 +27,7 @@ class _CreateAnAccountWidgetState extends State<CreateAnAccountWidget> {
     _model = createModel(context, () => CreateAnAccountModel());
 
     // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {
-      _model.flow = 'abc';
-      setState(() {});
-    });
+    SchedulerBinding.instance.addPostFrameCallback((_) async {});
 
     _model.nameTextController ??= TextEditingController();
     _model.nameFocusNode ??= FocusNode();
