@@ -28,7 +28,11 @@ class _CreateAnAccountWidgetState extends State<CreateAnAccountWidget> {
     _model = createModel(context, () => CreateAnAccountModel());
 
     // On page load action.
-    SchedulerBinding.instance.addPostFrameCallback((_) async {});
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      await actions.oryCreateBrowserRegistrationFlow(
+        context,
+      );
+    });
 
     _model.nameTextController ??= TextEditingController();
     _model.nameFocusNode ??= FocusNode();
