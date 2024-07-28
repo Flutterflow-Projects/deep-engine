@@ -11,6 +11,7 @@ import 'package:dio/dio.dart';
 import 'package:dio/browser.dart';
 import 'package:one_of/one_of.dart';
 import 'package:universal_html/html.dart';
+import 'package:ory_client/ory_client.dart';
 
 Future registerAuthService() async {
   // Ory auth steps as per https://www.ory.sh/docs/getting-started/integrate-auth/flutter-web-redirect
@@ -158,7 +159,7 @@ class AuthService {
     }
   }
 
-  Future<void> updateBrowserRegistrationFlow(
+  Future<Object?> updateBrowserRegistrationFlow(
       flow, email, passkeyRegister, csrfToken) async {
     try {
       final OneOf oneOf;
@@ -174,11 +175,13 @@ class AuthService {
           updateRegistrationFlowBody:
               UpdateRegistrationFlowBody((b) => b..oneOf = oneOf));
 
-      print(resp.data);
-      return;
+      return resp.data;
     } catch (error) {
-      print(error.toString());
-      return null;
+      if (error.toString().contains("Invalid argument(s): passkey")) {
+        return "Not an error, just sdk doesnt support passkey realy...";
+      } else {
+        return null;
+      }
     }
   }
 
