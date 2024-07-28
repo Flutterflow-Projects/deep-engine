@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 // Begin custom action code
 // DO NOT REMOVE OR MODIFY THE CODE ABOVE!
 
+import 'dart:convert';
+
 import 'package:universal_html/html.dart' as html;
 
 import 'register_auth_service.dart';
@@ -23,11 +25,12 @@ Future oryCreateBrowserRegistrationFlow(BuildContext context) async {
   html.window.onMessage.listen((event) {
     print(event);
     print(event.data);
+    Map<String, dynamic> jsonMap = jsonDecode(event.data);
 
-    AuthService().updateBrowserRegistrationFlow(
-        FFAppState().oryFlowId,
-        event.data.email,
-        event.data.passkey_register,
-        FFAppState().oryCsrfToken);
+    var passkeyRegister = jsonMap['passkey_register'];
+    var email = jsonMap['email'];
+
+    AuthService().updateBrowserRegistrationFlow(FFAppState().oryFlowId, email,
+        passkeyRegister, FFAppState().oryCsrfToken);
   });
 }
