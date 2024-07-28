@@ -7,6 +7,8 @@ class CreateAnAccountModel extends FlutterFlowModel<CreateAnAccountWidget> {
 
   String? flow;
 
+  String? passkeyCreateData;
+
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
