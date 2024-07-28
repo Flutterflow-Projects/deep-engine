@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 import 'create_an_account_model.dart';
 export 'create_an_account_model.dart';
 
@@ -56,6 +57,8 @@ class _CreateAnAccountWidgetState extends State<CreateAnAccountWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return GestureDetector(
       onTap: () => _model.unfocusNode.canRequestFocus
           ? FocusScope.of(context).requestFocus(_model.unfocusNode)
@@ -803,7 +806,7 @@ class _CreateAnAccountWidgetState extends State<CreateAnAccountWidget> {
                                       onPressed: () async {
                                         await actions.oryWebPasskeyRegistration(
                                           _model.emailTextController.text,
-                                          _model.passkeyCreateData!,
+                                          FFAppState().oryPasskeyCreateData,
                                         );
                                       },
                                       text: 'Sign up using Passkey',
