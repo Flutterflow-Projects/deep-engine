@@ -28,14 +28,14 @@ class _SignInPasskeyWidgetState extends State<SignInPasskeyWidget> {
 
     // On page load action.
     SchedulerBinding.instance.addPostFrameCallback((_) async {
-      await actions.oryCreateBrowserRegistrationFlow(
+      await actions.oryCreateBrowserLoginFlow(
         (errorMsg) async {
           await showDialog(
             context: context,
             builder: (alertDialogContext) {
               return AlertDialog(
                 title: const Text('Error'),
-                content: Text(errorMsg!),
+                content: const Text('Something went wrong'),
                 actions: [
                   TextButton(
                     onPressed: () => Navigator.pop(alertDialogContext),
@@ -47,7 +47,20 @@ class _SignInPasskeyWidgetState extends State<SignInPasskeyWidget> {
           );
         },
         () async {
-          context.goNamed('Dashboard');
+          await showDialog(
+            context: context,
+            builder: (alertDialogContext) {
+              return AlertDialog(
+                content: const Text('Success'),
+                actions: [
+                  TextButton(
+                    onPressed: () => Navigator.pop(alertDialogContext),
+                    child: const Text('Ok'),
+                  ),
+                ],
+              );
+            },
+          );
         },
       );
     });
