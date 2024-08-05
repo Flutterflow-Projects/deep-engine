@@ -140,7 +140,7 @@ class _RecentIssuesRowWidgetState extends State<RecentIssuesRowWidget> {
                       'OpenSSH X11 Forwarding Security BypassVulnerability (Linux)',
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           letterSpacing: 0.0,
                         ),
                   ),
@@ -180,7 +180,7 @@ class _RecentIssuesRowWidgetState extends State<RecentIssuesRowWidget> {
                       'Feb 25, 2024',
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           letterSpacing: 0.0,
                         ),
                   ),
@@ -193,7 +193,7 @@ class _RecentIssuesRowWidgetState extends State<RecentIssuesRowWidget> {
                       'at 18:34:22 GMT',
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).textTertiary600,
                           letterSpacing: 0.0,
                         ),

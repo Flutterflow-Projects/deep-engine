@@ -47,7 +47,7 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
           Text(
             'Emerging threats',
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: 'Readex Pro',
+                  fontFamily: 'Inter',
                   fontSize: 16.0,
                   letterSpacing: 0.0,
                 ),
@@ -66,9 +66,10 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
                       Text(
                         'CVE-2024-27198',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Readex Pro',
+                              fontFamily: 'Inter',
                               color: FlutterFlowTheme.of(context).secondaryText,
                               letterSpacing: 0.0,
+                              fontWeight: FontWeight.w500,
                             ),
                       ),
                       MouseRegion(
@@ -88,13 +89,13 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: _model.mouseRegionHovered1
                                         ? FlutterFlowTheme.of(context).textHover
                                         : FlutterFlowTheme.of(context)
                                             .textTertiary600,
                                     letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w500,
+                                    fontWeight: FontWeight.w600,
                                   ),
                             ),
                             FaIcon(
@@ -113,7 +114,7 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
                   Text(
                     'JetBrains TeamCity contains an\nauthentication bypass vulnarability that...',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).textTertiary600,
                           letterSpacing: 0.0,
                         ),
@@ -121,9 +122,10 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
                   Text(
                     '9.8 Critical',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).accent4,
                           letterSpacing: 0.0,
+                          fontWeight: FontWeight.w500,
                         ),
                   ),
                 ].divide(const SizedBox(height: 8.0)),
@@ -139,9 +141,10 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
                       Text(
                         'CVE-2024-27198',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Readex Pro',
+                              fontFamily: 'Inter',
                               color: FlutterFlowTheme.of(context).secondaryText,
                               letterSpacing: 0.0,
+                              fontWeight: FontWeight.w500,
                             ),
                       ),
                       MouseRegion(
@@ -161,13 +164,13 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: _model.mouseRegionHovered2
                                         ? FlutterFlowTheme.of(context).textHover
                                         : FlutterFlowTheme.of(context)
                                             .textTertiary600,
                                     letterSpacing: 0.0,
-                                    fontWeight: FontWeight.w500,
+                                    fontWeight: FontWeight.w600,
                                   ),
                             ),
                             FaIcon(
@@ -186,7 +189,7 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
                   Text(
                     'JetBrains TeamCity contains an\nauthentication bypass vulnarability that...',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).textTertiary600,
                           letterSpacing: 0.0,
                         ),
@@ -194,9 +197,10 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
                   Text(
                     '9.8 Critical',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).accent4,
                           letterSpacing: 0.0,
+                          fontWeight: FontWeight.w500,
                         ),
                   ),
                 ].divide(const SizedBox(height: 8.0)),

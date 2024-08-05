@@ -49,7 +49,7 @@ class _SignInWidgetState extends State<SignInWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Colors.black,
         body: SafeArea(
           top: true,
           child: Row(
@@ -59,8 +59,8 @@ class _SignInWidgetState extends State<SignInWidget> {
                 child: Container(
                   width: 100.0,
                   height: double.infinity,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).primaryBackground,
+                  decoration: const BoxDecoration(
+                    color: Colors.black,
                   ),
                   alignment: const AlignmentDirectional(0.0, 0.0),
                   child: SingleChildScrollView(
@@ -89,13 +89,17 @@ class _SignInWidgetState extends State<SignInWidget> {
                                   phone: false,
                                   tablet: false,
                                 ))
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(8.0),
-                                    child: SvgPicture.asset(
-                                      'assets/images/logo-wordmark.svg',
-                                      width: 300.0,
-                                      height: 35.0,
-                                      fit: BoxFit.contain,
+                                  Padding(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 0.0, 0.0, 12.0),
+                                    child: ClipRRect(
+                                      borderRadius: BorderRadius.circular(8.0),
+                                      child: SvgPicture.asset(
+                                        'assets/images/logo-wordmark.svg',
+                                        width: 300.0,
+                                        height: 40.0,
+                                        fit: BoxFit.contain,
+                                      ),
                                     ),
                                   ),
                                 if (responsiveVisibility(
@@ -147,7 +151,8 @@ class _SignInWidgetState extends State<SignInWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .headlineLarge
                                         .override(
-                                          fontFamily: 'Outfit',
+                                          fontFamily: 'Inter',
+                                          color: const Color(0xFFF7F7F7),
                                           fontSize: 30.0,
                                           letterSpacing: 0.0,
                                         ),
@@ -160,9 +165,8 @@ class _SignInWidgetState extends State<SignInWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .labelMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
-                                            color: FlutterFlowTheme.of(context)
-                                                .textTertiary600,
+                                            fontFamily: 'Inter',
+                                            color: const Color(0xFF868686),
                                             fontSize: 16.0,
                                             letterSpacing: 0.0,
                                           ),
@@ -184,35 +188,30 @@ class _SignInWidgetState extends State<SignInWidget> {
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
                                                   .override(
-                                                    fontFamily: 'Readex Pro',
+                                                    fontFamily: 'Inter',
+                                                    color: const Color(0xFFCECECE),
                                                     letterSpacing: 0.0,
                                                   ),
                                           hintText: 'Enter your business email',
-                                          hintStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .bodyLarge
-                                              .override(
-                                                fontFamily: 'Readex Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .textTertiary600,
-                                                letterSpacing: 0.0,
-                                              ),
+                                          hintStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyLarge
+                                                  .override(
+                                                    fontFamily: 'Inter',
+                                                    color: const Color(0xFF868686),
+                                                    letterSpacing: 0.0,
+                                                  ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .borderPrimary,
+                                            borderSide: const BorderSide(
+                                              color: Color(0xFF202020),
                                               width: 2.0,
                                             ),
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
+                                            borderSide: const BorderSide(
+                                              color: Color(0xFF5976DE),
                                               width: 2.0,
                                             ),
                                             borderRadius:
@@ -240,14 +239,13 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
+                                          fillColor: const Color(0xFF0A0A0A),
                                         ),
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Inter',
+                                              color: const Color(0xFFF7F7F7),
                                               letterSpacing: 0.0,
                                             ),
                                         keyboardType:
@@ -275,35 +273,30 @@ class _SignInWidgetState extends State<SignInWidget> {
                                               FlutterFlowTheme.of(context)
                                                   .labelLarge
                                                   .override(
-                                                    fontFamily: 'Readex Pro',
+                                                    fontFamily: 'Inter',
+                                                    color: const Color(0xFFCECECE),
                                                     letterSpacing: 0.0,
                                                   ),
-                                          hintText: 'CEnter your password',
-                                          hintStyle: FlutterFlowTheme.of(
-                                                  context)
-                                              .bodyLarge
-                                              .override(
-                                                fontFamily: 'Readex Pro',
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .textTertiary600,
-                                                letterSpacing: 0.0,
-                                              ),
+                                          hintText: 'Enter your password',
+                                          hintStyle:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyLarge
+                                                  .override(
+                                                    fontFamily: 'Inter',
+                                                    color: const Color(0xFF868686),
+                                                    letterSpacing: 0.0,
+                                                  ),
                                           enabledBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .borderPrimary,
+                                            borderSide: const BorderSide(
+                                              color: Color(0xFF202020),
                                               width: 2.0,
                                             ),
                                             borderRadius:
                                                 BorderRadius.circular(12.0),
                                           ),
                                           focusedBorder: OutlineInputBorder(
-                                            borderSide: BorderSide(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .primary,
+                                            borderSide: const BorderSide(
+                                              color: Color(0xFF5976DE),
                                               width: 2.0,
                                             ),
                                             borderRadius:
@@ -331,9 +324,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                 BorderRadius.circular(12.0),
                                           ),
                                           filled: true,
-                                          fillColor:
-                                              FlutterFlowTheme.of(context)
-                                                  .secondaryBackground,
+                                          fillColor: const Color(0xFF0A0A0A),
                                           suffixIcon: InkWell(
                                             onTap: () => setState(
                                               () => _model.passwordVisibility =
@@ -346,9 +337,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                   ? Icons.visibility_outlined
                                                   : Icons
                                                       .visibility_off_outlined,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryText,
+                                              color: const Color(0xFFCECECE),
                                               size: 24.0,
                                             ),
                                           ),
@@ -356,7 +345,8 @@ class _SignInWidgetState extends State<SignInWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyLarge
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Inter',
+                                              color: const Color(0xFFF7F7F7),
                                               letterSpacing: 0.0,
                                             ),
                                         validator: _model
@@ -375,10 +365,8 @@ class _SignInWidgetState extends State<SignInWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .labelMedium
                                             .override(
-                                              fontFamily: 'Readex Pro',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .textTertiary600,
+                                              fontFamily: 'Inter',
+                                              color: const Color(0xFF868686),
                                               fontSize: 16.0,
                                               letterSpacing: 0.0,
                                             ),
@@ -398,12 +386,11 @@ class _SignInWidgetState extends State<SignInWidget> {
                                       iconPadding:
                                           const EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color: FlutterFlowTheme.of(context)
-                                          .btnPrimaryBg,
+                                      color: const Color(0xFF2E53D8),
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'Inter',
                                             color: FlutterFlowTheme.of(context)
                                                 .btnPrimaryText,
                                             letterSpacing: 0.0,
@@ -432,21 +419,17 @@ class _SignInWidgetState extends State<SignInWidget> {
                                         iconPadding:
                                             const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: FlutterFlowTheme.of(context)
-                                            .btnSecondaryBg,
+                                        color: const Color(0xFF191919),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Readex Pro',
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .btnSecondaryTextColor,
+                                              fontFamily: 'Inter',
+                                              color: const Color(0xFFCECECE),
                                               letterSpacing: 0.0,
                                             ),
                                         elevation: 3.0,
-                                        borderSide: BorderSide(
-                                          color: FlutterFlowTheme.of(context)
-                                              .btnSecondaryBorder,
+                                        borderSide: const BorderSide(
+                                          color: Color(0xFF202020),
                                           width: 1.0,
                                         ),
                                         borderRadius:
@@ -487,27 +470,23 @@ class _SignInWidgetState extends State<SignInWidget> {
                                             child: Container(
                                               width: 70.0,
                                               height: 32.0,
-                                              decoration: BoxDecoration(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .primaryBackground,
+                                              decoration: const BoxDecoration(
+                                                color: Colors.black,
                                               ),
                                               alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Text(
                                                 'or',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .labelLarge
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .textTertiary600,
-                                                      fontSize: 14.0,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .labelLarge
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color:
+                                                              const Color(0xFF868686),
+                                                          fontSize: 14.0,
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ),
@@ -530,6 +509,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                             text: '',
                                             icon: const FaIcon(
                                               FontAwesomeIcons.google,
+                                              color: Color(0xFFCECECE),
                                             ),
                                             options: FFButtonOptions(
                                               width: double.infinity,
@@ -539,24 +519,19 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                       24.0, 0.0, 24.0, 0.0),
                                               iconPadding: const EdgeInsetsDirectional
                                                   .fromSTEB(8.0, 0.0, 0.0, 0.0),
-                                              color:
+                                              color: const Color(0xFF272727),
+                                              textStyle:
                                                   FlutterFlowTheme.of(context)
-                                                      .btnSecondaryBg,
-                                              textStyle: FlutterFlowTheme.of(
-                                                      context)
-                                                  .titleSmall
-                                                  .override(
-                                                    fontFamily: 'Readex Pro',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .btnSecondaryTextColor,
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily: 'Inter',
+                                                        color:
+                                                            const Color(0xFFCECECE),
+                                                        letterSpacing: 0.0,
+                                                      ),
                                               elevation: 3.0,
-                                              borderSide: BorderSide(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .btnSecondaryBorder,
+                                              borderSide: const BorderSide(
+                                                color: Color(0xFF202020),
                                                 width: 1.0,
                                               ),
                                               borderRadius:
@@ -577,6 +552,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                             text: '',
                                             icon: const Icon(
                                               Icons.apple_outlined,
+                                              color: Color(0xFFCECECE),
                                               size: 30.0,
                                             ),
                                             options: FFButtonOptions(
@@ -587,24 +563,20 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                       24.0, 0.0, 24.0, 0.0),
                                               iconPadding: const EdgeInsetsDirectional
                                                   .fromSTEB(8.0, 0.0, 0.0, 0.0),
-                                              color:
+                                              color: const Color(0xFF272727),
+                                              textStyle:
                                                   FlutterFlowTheme.of(context)
-                                                      .btnSecondaryBg,
-                                              textStyle: FlutterFlowTheme.of(
-                                                      context)
-                                                  .titleSmall
-                                                  .override(
-                                                    fontFamily: 'Readex Pro',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .btnSecondaryTextColor,
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily: 'Inter',
+                                                        color: FlutterFlowTheme
+                                                                .of(context)
+                                                            .btnSecondaryTextColor,
+                                                        letterSpacing: 0.0,
+                                                      ),
                                               elevation: 3.0,
-                                              borderSide: BorderSide(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .btnSecondaryBorder,
+                                              borderSide: const BorderSide(
+                                                color: Color(0xFF202020),
                                                 width: 1.0,
                                               ),
                                               borderRadius:
@@ -625,6 +597,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                             text: '',
                                             icon: const FaIcon(
                                               FontAwesomeIcons.github,
+                                              color: Color(0xFFCECECE),
                                             ),
                                             options: FFButtonOptions(
                                               width: double.infinity,
@@ -634,24 +607,19 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                       24.0, 0.0, 24.0, 0.0),
                                               iconPadding: const EdgeInsetsDirectional
                                                   .fromSTEB(8.0, 0.0, 0.0, 0.0),
-                                              color:
+                                              color: const Color(0xFF272727),
+                                              textStyle:
                                                   FlutterFlowTheme.of(context)
-                                                      .btnSecondaryBg,
-                                              textStyle: FlutterFlowTheme.of(
-                                                      context)
-                                                  .titleSmall
-                                                  .override(
-                                                    fontFamily: 'Readex Pro',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .btnSecondaryTextColor,
-                                                    letterSpacing: 0.0,
-                                                  ),
+                                                      .titleSmall
+                                                      .override(
+                                                        fontFamily: 'Inter',
+                                                        color:
+                                                            const Color(0xFFCECECE),
+                                                        letterSpacing: 0.0,
+                                                      ),
                                               elevation: 3.0,
-                                              borderSide: BorderSide(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .btnSecondaryBorder,
+                                              borderSide: const BorderSide(
+                                                color: Color(0xFF202020),
                                                 width: 1.0,
                                               ),
                                               borderRadius:
@@ -674,12 +642,10 @@ class _SignInWidgetState extends State<SignInWidget> {
                                             MediaQuery.of(context).textScaler,
                                         text: TextSpan(
                                           children: [
-                                            TextSpan(
+                                            const TextSpan(
                                               text: 'Don\'t have an account?',
                                               style: TextStyle(
-                                                color:
-                                                    FlutterFlowTheme.of(context)
-                                                        .textTertiary600,
+                                                color: Color(0xFF868686),
                                               ),
                                             ),
                                             TextSpan(
@@ -688,7 +654,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Readex Pro',
+                                                    fontFamily: 'Inter',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .primary,
@@ -700,14 +666,15 @@ class _SignInWidgetState extends State<SignInWidget> {
                                               recognizer: TapGestureRecognizer()
                                                 ..onTap = () async {
                                                   context.pushNamed(
-                                                      'CreateAnAccount');
+                                                      'CreateAnAccountPasskey');
                                                 },
                                             )
                                           ],
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Readex Pro',
+                                                fontFamily: 'Inter',
+                                                color: const Color(0xFFF7F7F7),
                                                 letterSpacing: 0.0,
                                               ),
                                         ),
@@ -736,7 +703,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                       width: 100.0,
                       height: double.infinity,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).bgTertiary,
+                        color: const Color(0xFF191919),
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
@@ -745,8 +712,6 @@ class _SignInWidgetState extends State<SignInWidget> {
                           width: 100.0,
                           height: 100.0,
                           decoration: BoxDecoration(
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
                             image: DecorationImage(
                               fit: BoxFit.cover,
                               image: Image.asset(
@@ -775,7 +740,8 @@ class _SignInWidgetState extends State<SignInWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Inter',
+                                              color: const Color(0xFFF7F7F7),
                                               fontSize: 30.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w600,
@@ -800,18 +766,16 @@ class _SignInWidgetState extends State<SignInWidget> {
                                               ),
                                               Text(
                                                 'Maintain your security posture around \nthe clock',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .textTertiary600,
-                                                      fontSize: 16.0,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color:
+                                                              const Color(0xFF868686),
+                                                          fontSize: 16.0,
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ].divide(const SizedBox(width: 8.0)),
                                           ),
@@ -829,18 +793,16 @@ class _SignInWidgetState extends State<SignInWidget> {
                                               ),
                                               Text(
                                                 'Stay on top of common CVEs in\nnetwork, external, web, apps, etc.',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .textTertiary600,
-                                                      fontSize: 16.0,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color:
+                                                              const Color(0xFF868686),
+                                                          fontSize: 16.0,
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ].divide(const SizedBox(width: 8.0)),
                                           ),
@@ -858,18 +820,16 @@ class _SignInWidgetState extends State<SignInWidget> {
                                               ),
                                               Text(
                                                 'Save money on expensive pentests,\nand comply easier',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .textTertiary600,
-                                                      fontSize: 16.0,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color:
+                                                              const Color(0xFF868686),
+                                                          fontSize: 16.0,
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ].divide(const SizedBox(width: 8.0)),
                                           ),

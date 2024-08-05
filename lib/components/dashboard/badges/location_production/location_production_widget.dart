@@ -58,9 +58,10 @@ class _LocationProductionWidgetState extends State<LocationProductionWidget> {
               Text(
                 'Some App',
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Readex Pro',
+                      fontFamily: 'Inter',
                       color: FlutterFlowTheme.of(context).utilityPink700,
                       letterSpacing: 0.0,
+                      fontWeight: FontWeight.w500,
                     ),
               ),
             ].divide(const SizedBox(width: 4.0)),

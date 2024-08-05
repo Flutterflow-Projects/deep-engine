@@ -49,7 +49,7 @@ class _EmergingThreatsMobileWidgetState
           Text(
             'Emerging threats',
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: 'Readex Pro',
+                  fontFamily: 'Inter',
                   fontSize: 16.0,
                   letterSpacing: 0.0,
                 ),
@@ -68,7 +68,7 @@ class _EmergingThreatsMobileWidgetState
                       Text(
                         'CVE-2024-27198',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Readex Pro',
+                              fontFamily: 'Inter',
                               color: FlutterFlowTheme.of(context).secondaryText,
                               letterSpacing: 0.0,
                             ),
@@ -90,7 +90,7 @@ class _EmergingThreatsMobileWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: _model.mouseRegionHovered1
                                         ? FlutterFlowTheme.of(context).textHover
                                         : FlutterFlowTheme.of(context)
@@ -115,7 +115,7 @@ class _EmergingThreatsMobileWidgetState
                   Text(
                     'JetBrains TeamCity contains an\nauthentication bypass vulnarability that...',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).textTertiary600,
                           letterSpacing: 0.0,
                         ),
@@ -123,7 +123,7 @@ class _EmergingThreatsMobileWidgetState
                   Text(
                     '9.8 Critical',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).accent4,
                           letterSpacing: 0.0,
                         ),
@@ -141,7 +141,7 @@ class _EmergingThreatsMobileWidgetState
                       Text(
                         'CVE-2024-27198',
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Readex Pro',
+                              fontFamily: 'Inter',
                               color: FlutterFlowTheme.of(context).secondaryText,
                               letterSpacing: 0.0,
                             ),
@@ -163,7 +163,7 @@ class _EmergingThreatsMobileWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: _model.mouseRegionHovered2
                                         ? FlutterFlowTheme.of(context).textHover
                                         : FlutterFlowTheme.of(context)
@@ -188,7 +188,7 @@ class _EmergingThreatsMobileWidgetState
                   Text(
                     'JetBrains TeamCity contains an\nauthentication bypass vulnarability that...',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).textTertiary600,
                           letterSpacing: 0.0,
                         ),
@@ -196,7 +196,7 @@ class _EmergingThreatsMobileWidgetState
                   Text(
                     '9.8 Critical',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).accent4,
                           letterSpacing: 0.0,
                         ),

@@ -59,7 +59,7 @@ class _OpenIssuesNumbersWidgetState extends State<OpenIssuesNumbersWidget> {
                     Text(
                       'Open issues',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Inter',
                             fontSize: 16.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w600,
@@ -72,7 +72,7 @@ class _OpenIssuesNumbersWidgetState extends State<OpenIssuesNumbersWidget> {
                           'Affected targets: ',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .textTertiary600,
                                     letterSpacing: 0.0,
@@ -83,7 +83,7 @@ class _OpenIssuesNumbersWidgetState extends State<OpenIssuesNumbersWidget> {
                           style: FlutterFlowTheme.of(context)
                               .bodyMedium
                               .override(
-                                fontFamily: 'Readex Pro',
+                                fontFamily: 'Inter',
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 letterSpacing: 0.0,
                                 decoration: TextDecoration.underline,
@@ -105,7 +105,7 @@ class _OpenIssuesNumbersWidgetState extends State<OpenIssuesNumbersWidget> {
                   Text(
                     'Action needed',
                     style: FlutterFlowTheme.of(context).bodyMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).error,
                           letterSpacing: 0.0,
                         ),

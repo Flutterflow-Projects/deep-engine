@@ -1,8 +1,9 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'create_an_account_widget.dart' show CreateAnAccountWidget;
+import 'create_an_account_sign_up_widget.dart' show CreateAnAccountSignUpWidget;
 import 'package:flutter/material.dart';
 
-class CreateAnAccountModel extends FlutterFlowModel<CreateAnAccountWidget> {
+class CreateAnAccountSignUpModel
+    extends FlutterFlowModel<CreateAnAccountSignUpWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

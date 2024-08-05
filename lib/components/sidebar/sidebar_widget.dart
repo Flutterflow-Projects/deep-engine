@@ -119,7 +119,7 @@ class _SidebarWidgetState extends State<SidebarWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Inter',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryText,
@@ -174,7 +174,7 @@ class _SidebarWidgetState extends State<SidebarWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Inter',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryText,
@@ -229,7 +229,7 @@ class _SidebarWidgetState extends State<SidebarWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Inter',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryText,
@@ -284,7 +284,7 @@ class _SidebarWidgetState extends State<SidebarWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Inter',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryText,
@@ -339,7 +339,7 @@ class _SidebarWidgetState extends State<SidebarWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Inter',
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryText,
@@ -378,7 +378,7 @@ class _SidebarWidgetState extends State<SidebarWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Readex Pro',
+                                  fontFamily: 'Inter',
                                   fontSize: 16.0,
                                   letterSpacing: 0.0,
                                   fontWeight: FontWeight.w500,

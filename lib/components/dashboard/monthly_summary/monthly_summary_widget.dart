@@ -46,7 +46,7 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
           Text(
             'Monthly summary',
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: 'Readex Pro',
+                  fontFamily: 'Inter',
                   fontSize: 16.0,
                   letterSpacing: 0.0,
                 ),
@@ -66,10 +66,11 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                           'Issues found',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .textTertiary600,
                                     letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w500,
                                   ),
                         ),
                         Row(
@@ -81,9 +82,10 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w500,
                                   ),
                             ),
                             Container(
@@ -112,11 +114,12 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'Inter',
                                             color: FlutterFlowTheme.of(context)
                                                 .utilityError700,
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
+                                            fontWeight: FontWeight.w500,
                                           ),
                                     ),
                                   ].divide(const SizedBox(width: 4.0)),
@@ -143,10 +146,11 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                           'Scans performed',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .textTertiary600,
                                     letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w500,
                                   ),
                         ),
                         Row(
@@ -158,9 +162,10 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w500,
                                   ),
                             ),
                             Container(
@@ -189,11 +194,12 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'Inter',
                                             color: FlutterFlowTheme.of(context)
                                                 .utilitySuccess700,
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
+                                            fontWeight: FontWeight.w500,
                                           ),
                                     ),
                                   ].divide(const SizedBox(width: 4.0)),
@@ -223,10 +229,11 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                           'Targets affected',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .textTertiary600,
                                     letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w500,
                                   ),
                         ),
                         Row(
@@ -238,9 +245,10 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w500,
                                   ),
                             ),
                             Container(
@@ -263,11 +271,12 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'Inter',
                                             color: FlutterFlowTheme.of(context)
                                                 .textTertiary600,
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
+                                            fontWeight: FontWeight.w500,
                                           ),
                                     ),
                                   ].divide(const SizedBox(width: 4.0)),
@@ -294,10 +303,11 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                           'Issues resolved',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .textTertiary600,
                                     letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w500,
                                   ),
                         ),
                         Row(
@@ -309,9 +319,10 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w500,
                                   ),
                             ),
                             Container(
@@ -340,11 +351,12 @@ class _MonthlySummaryWidgetState extends State<MonthlySummaryWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'Inter',
                                             color: FlutterFlowTheme.of(context)
                                                 .utilityError700,
                                             fontSize: 12.0,
                                             letterSpacing: 0.0,
+                                            fontWeight: FontWeight.w500,
                                           ),
                                     ),
                                   ].divide(const SizedBox(width: 4.0)),

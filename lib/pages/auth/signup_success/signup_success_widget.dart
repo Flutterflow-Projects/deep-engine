@@ -41,7 +41,7 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        backgroundColor: Colors.black,
         body: SafeArea(
           top: true,
           child: Row(
@@ -51,8 +51,8 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                 child: Container(
                   width: 100.0,
                   height: double.infinity,
-                  decoration: BoxDecoration(
-                    color: FlutterFlowTheme.of(context).primaryBackground,
+                  decoration: const BoxDecoration(
+                    color: Colors.black,
                   ),
                   alignment: const AlignmentDirectional(0.0, -1.0),
                   child: Align(
@@ -92,7 +92,8 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
                                       .override(
-                                        fontFamily: 'Readex Pro',
+                                        fontFamily: 'Inter',
+                                        color: const Color(0xFFF7F7F7),
                                         fontSize: 20.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.w600,
@@ -110,13 +111,11 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                           MediaQuery.of(context).textScaler,
                                       text: TextSpan(
                                         children: [
-                                          TextSpan(
+                                          const TextSpan(
                                             text:
                                                 'We send an account verification url to\n ',
                                             style: TextStyle(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .textTertiary600,
+                                              color: Color(0xFF868686),
                                             ),
                                           ),
                                           TextSpan(
@@ -124,28 +123,25 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Readex Pro',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .primaryText,
+                                                  fontFamily: 'Inter',
+                                                  color: const Color(0xFFF7F7F7),
                                                   letterSpacing: 0.0,
-                                                  fontWeight: FontWeight.w600,
+                                                  fontWeight: FontWeight.normal,
                                                 ),
                                           ),
-                                          TextSpan(
+                                          const TextSpan(
                                             text:
                                                 '. If you didn\'t get it, check\nyour spam folder or request one more time.',
                                             style: TextStyle(
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .textTertiary600,
+                                              color: Color(0xFF868686),
                                             ),
                                           )
                                         ],
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Inter',
+                                              color: const Color(0xFFF7F7F7),
                                               fontSize: 16.0,
                                               letterSpacing: 0.0,
                                             ),
@@ -171,7 +167,7 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           color: FlutterFlowTheme.of(context)
                                               .btnPrimaryText,
                                           letterSpacing: 0.0,
@@ -209,7 +205,7 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Readex Pro',
+                                                  fontFamily: 'Inter',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .primary,
@@ -221,7 +217,8 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Inter',
+                                              color: const Color(0xFFF7F7F7),
                                               letterSpacing: 0.0,
                                             ),
                                       ),
@@ -232,10 +229,9 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                   mainAxisSize: MainAxisSize.max,
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Icon(
+                                    const Icon(
                                       Icons.arrow_back,
-                                      color: FlutterFlowTheme.of(context)
-                                          .textTertiary600,
+                                      color: Color(0xFF868686),
                                       size: 24.0,
                                     ),
                                     Text(
@@ -243,10 +239,10 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
-                                            color: FlutterFlowTheme.of(context)
-                                                .textTertiary600,
+                                            fontFamily: 'Inter',
+                                            color: const Color(0xFF868686),
                                             letterSpacing: 0.0,
+                                            fontWeight: FontWeight.w600,
                                           ),
                                     ),
                                   ].divide(const SizedBox(width: 8.0)),
@@ -272,7 +268,7 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                       width: 100.0,
                       height: double.infinity,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).bgTertiary,
+                        color: const Color(0xFF191919),
                         borderRadius: BorderRadius.circular(24.0),
                       ),
                       child: Padding(
@@ -281,8 +277,6 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                           width: 100.0,
                           height: 100.0,
                           decoration: BoxDecoration(
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
                             image: DecorationImage(
                               fit: BoxFit.cover,
                               image: Image.asset(
@@ -311,7 +305,8 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Inter',
+                                              color: const Color(0xFFF7F7F7),
                                               fontSize: 30.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w600,
@@ -336,18 +331,16 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                               ),
                                               Text(
                                                 'Maintain your security posture around \nthe clock',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .textTertiary600,
-                                                      fontSize: 16.0,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color:
+                                                              const Color(0xFF868686),
+                                                          fontSize: 16.0,
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ].divide(const SizedBox(width: 8.0)),
                                           ),
@@ -365,18 +358,16 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                               ),
                                               Text(
                                                 'Stay on top of common CVEs in\nnetwork, external, web, apps, etc.',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .textTertiary600,
-                                                      fontSize: 16.0,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color:
+                                                              const Color(0xFF868686),
+                                                          fontSize: 16.0,
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ].divide(const SizedBox(width: 8.0)),
                                           ),
@@ -394,18 +385,16 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                               ),
                                               Text(
                                                 'Save money on expensive pentests,\nand comply easier',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .textTertiary600,
-                                                      fontSize: 16.0,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color:
+                                                              const Color(0xFF868686),
+                                                          fontSize: 16.0,
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ].divide(const SizedBox(width: 8.0)),
                                           ),

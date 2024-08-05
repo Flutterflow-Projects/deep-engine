@@ -57,9 +57,10 @@ class _LocationTestEnvWidgetState extends State<LocationTestEnvWidget> {
               Text(
                 'Test Env',
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Readex Pro',
+                      fontFamily: 'Inter',
                       color: FlutterFlowTheme.of(context).utilityBlue700,
                       letterSpacing: 0.0,
+                      fontWeight: FontWeight.w500,
                     ),
               ),
             ].divide(const SizedBox(width: 4.0)),
