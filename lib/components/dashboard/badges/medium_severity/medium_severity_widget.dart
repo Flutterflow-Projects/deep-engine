@@ -58,8 +58,8 @@ class _MediumSeverityWidgetState extends State<MediumSeverityWidget> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              width: 10.0,
-              height: 10.0,
+              width: 7.0,
+              height: 7.0,
               decoration: BoxDecoration(
                 color: FlutterFlowTheme.of(context).accent2,
                 shape: BoxShape.circle,
@@ -71,7 +71,7 @@ class _MediumSeverityWidgetState extends State<MediumSeverityWidget> {
                 '9.8',
               ),
               style: FlutterFlowTheme.of(context).bodyMedium.override(
-                    fontFamily: 'Readex Pro',
+                    fontFamily: 'Inter',
                     color: FlutterFlowTheme.of(context).utilityWarning500,
                     letterSpacing: 0.0,
                   ),

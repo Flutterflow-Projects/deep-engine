@@ -186,17 +186,16 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Dashboard',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textHover,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -267,7 +266,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .textTertiary600,
+                                                              .secondaryText,
                                                       size: 24.0,
                                                     ),
                                                     Padding(
@@ -286,10 +285,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .textTertiary600,
+                                                                      .secondaryText,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -380,7 +379,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -469,7 +468,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -558,7 +557,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -647,7 +646,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -729,7 +728,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .textTertiary600,
+                                                              .secondaryText,
                                                       size: 24.0,
                                                     ),
                                                     Padding(
@@ -748,10 +747,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .textTertiary600,
+                                                                      .secondaryText,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -842,7 +841,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -931,7 +930,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -1020,7 +1019,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -1109,7 +1108,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -1191,7 +1190,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .textTertiary600,
+                                                              .secondaryText,
                                                       size: 24.0,
                                                     ),
                                                     Padding(
@@ -1210,10 +1209,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .textTertiary600,
+                                                                      .secondaryText,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1304,7 +1303,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -1393,7 +1392,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -1482,7 +1481,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -1571,7 +1570,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -1653,7 +1652,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .textTertiary600,
+                                                              .secondaryText,
                                                       size: 24.0,
                                                     ),
                                                     Padding(
@@ -1672,10 +1671,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .textTertiary600,
+                                                                      .secondaryText,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -1766,7 +1765,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -1855,7 +1854,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -1944,7 +1943,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -2033,7 +2032,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -2114,7 +2113,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .textTertiary600,
+                                                              .secondaryText,
                                                       size: 24.0,
                                                     ),
                                                     Padding(
@@ -2133,10 +2132,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
-                                                                      .textTertiary600,
+                                                                      .secondaryText,
                                                                   letterSpacing:
                                                                       0.0,
                                                                 ),
@@ -2227,7 +2226,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -2316,7 +2315,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -2405,7 +2404,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -2494,7 +2493,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                                 .titleSmall
                                                                 .override(
                                                                   fontFamily:
-                                                                      'Readex Pro',
+                                                                      'Inter',
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .textTertiary600,
@@ -2550,7 +2549,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Readex Pro',
+                                                    fontFamily: 'Inter',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .primaryText,
@@ -2578,7 +2577,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
-                                                  fontFamily: 'Readex Pro',
+                                                  fontFamily: 'Inter',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .textTertiary600,
@@ -2605,7 +2604,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Readex Pro',
+                                                    fontFamily: 'Inter',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .secondaryText,
@@ -2638,8 +2637,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                         ClipRRect(
                                           borderRadius:
                                               BorderRadius.circular(24.0),
-                                          child: Image.network(
-                                            'https://s3-alpha-sig.figma.com/img/91bc/9e11/99f636215e809a958a02f9815dab2751?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=caamiVPAbOYT6AFMdUuLtqkqE8P3nG3n1~fFshOOZvxAITanKDO64btIgU7dIenJ1Rp2kIA6cQfrDPE-HxKBbfu-n4oj644MYGLBIZc4dFAGj6h3K2cVNtVgw9zBIoD9QjT9nHbqBbXmyOurS4p-FbqWk6vjK0A1Azyg2f1HYGMvBMw17iMD-v6mFxvdAbkS60lwcer0R8J3Ib4xocm7YkfxuYCz7aaNZF02UGfiVP7jk8VmhKs-FhPrbQfTELMYUJcN8VzTfFD6fjW1LLFyxe6zFWytam4ZrT0tFeFN-kGdBuN3aUs2bF6goJbTXCNjsDkS8yP0RQ7eyhRpcH5sGg__',
+                                          child: Image.asset(
+                                            'assets/images/Figma_Image_320x320.jpeg',
                                             width: 40.0,
                                             height: 40.0,
                                             fit: BoxFit.cover,
@@ -2656,31 +2655,29 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                             children: [
                                               Text(
                                                 'Acme Corp',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .secondaryText,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                               Text(
                                                 'company@acme.com',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .bodyMedium
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ].divide(const SizedBox(height: 4.0)),
                                           ),

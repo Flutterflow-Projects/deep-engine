@@ -89,7 +89,7 @@ class _SearchBarDrodownWidgetState extends State<SearchBarDrodownWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Readex Pro',
+                                      fontFamily: 'Inter',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       fontSize: 18.0,
@@ -156,7 +156,7 @@ class _SearchBarDrodownWidgetState extends State<SearchBarDrodownWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Readex Pro',
+                                      fontFamily: 'Inter',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       fontSize: 18.0,
@@ -226,7 +226,7 @@ class _SearchBarDrodownWidgetState extends State<SearchBarDrodownWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Readex Pro',
+                                      fontFamily: 'Inter',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       fontSize: 18.0,
@@ -296,7 +296,7 @@ class _SearchBarDrodownWidgetState extends State<SearchBarDrodownWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Readex Pro',
+                                      fontFamily: 'Inter',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       fontSize: 18.0,
@@ -366,7 +366,7 @@ class _SearchBarDrodownWidgetState extends State<SearchBarDrodownWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Readex Pro',
+                                      fontFamily: 'Inter',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       fontSize: 18.0,
@@ -436,7 +436,7 @@ class _SearchBarDrodownWidgetState extends State<SearchBarDrodownWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Readex Pro',
+                                      fontFamily: 'Inter',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       fontSize: 18.0,
@@ -506,7 +506,7 @@ class _SearchBarDrodownWidgetState extends State<SearchBarDrodownWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Readex Pro',
+                                      fontFamily: 'Inter',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       fontSize: 18.0,
@@ -576,7 +576,7 @@ class _SearchBarDrodownWidgetState extends State<SearchBarDrodownWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Readex Pro',
+                                      fontFamily: 'Inter',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       fontSize: 18.0,
@@ -646,7 +646,7 @@ class _SearchBarDrodownWidgetState extends State<SearchBarDrodownWidget> {
                                 style: FlutterFlowTheme.of(context)
                                     .bodyMedium
                                     .override(
-                                      fontFamily: 'Readex Pro',
+                                      fontFamily: 'Inter',
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryText,
                                       fontSize: 18.0,

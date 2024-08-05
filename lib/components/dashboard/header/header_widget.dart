@@ -70,14 +70,6 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                       alignment: const Alignment(-1.0, 0.0),
                     ),
                   ),
-                Opacity(
-                  opacity: 0.0,
-                  child: Icon(
-                    Icons.settings_outlined,
-                    color: FlutterFlowTheme.of(context).secondaryText,
-                    size: 24.0,
-                  ),
-                ),
                 if (responsiveVisibility(
                   context: context,
                   phone: false,
@@ -95,13 +87,13 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                         decoration: InputDecoration(
                           labelStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     letterSpacing: 0.0,
                                   ),
                           hintText: 'Type in a keyword',
                           hintStyle:
                               FlutterFlowTheme.of(context).labelMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .textTertiary600,
                                     letterSpacing: 0.0,
@@ -136,7 +128,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                           ),
                         ),
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Readex Pro',
+                              fontFamily: 'Inter',
                               letterSpacing: 0.0,
                             ),
                         validator:
@@ -252,7 +244,7 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                 Text(
                   'Overview',
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
-                        fontFamily: 'Outfit',
+                        fontFamily: 'Inter',
                         fontSize: 20.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.w600,
@@ -281,15 +273,14 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                           color: FlutterFlowTheme.of(context).btnSecondaryBg,
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .btnSecondaryTextColor,
                                     letterSpacing: 0.0,
                                   ),
                           elevation: 2.0,
-                          borderSide: BorderSide(
-                            color:
-                                FlutterFlowTheme.of(context).btnSecondaryBorder,
+                          borderSide: const BorderSide(
+                            color: Color(0xFF454545),
                             width: 1.0,
                           ),
                           borderRadius: BorderRadius.circular(8.0),
@@ -316,10 +307,12 @@ class _HeaderWidgetState extends State<HeaderWidget> {
                           textStyle: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: 'Readex Pro',
+                                fontFamily: 'Inter',
                                 color:
                                     FlutterFlowTheme.of(context).btnPrimaryText,
+                                fontSize: 14.0,
                                 letterSpacing: 0.0,
+                                fontWeight: FontWeight.w600,
                               ),
                           elevation: 3.0,
                           borderSide: const BorderSide(

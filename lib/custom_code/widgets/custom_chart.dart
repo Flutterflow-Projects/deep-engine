@@ -39,22 +39,24 @@ class _CustomChartState extends State<CustomChart> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               LegendItem(
-                  color: Colors.red,
+                  color: Color(0xFFF04438),
                   text: 'Critical',
                   textColor: widget.textColor),
               SizedBox(width: 10),
               LegendItem(
-                  color: Colors.orange,
+                  color: Color(0xFFEF6820),
                   text: 'High',
                   textColor: widget.textColor),
               SizedBox(width: 10),
               LegendItem(
-                  color: Colors.yellow,
+                  color: Color(0xFFFAC515),
                   text: 'Medium',
                   textColor: widget.textColor),
               SizedBox(width: 10),
               LegendItem(
-                  color: Colors.blue, text: 'Low', textColor: widget.textColor),
+                  color: Color(0xFF5976DE),
+                  text: 'Low',
+                  textColor: widget.textColor),
             ],
           ),
         ),
@@ -190,10 +192,10 @@ class _CustomChartState extends State<CustomChart> {
     ];
 
     final colors = [
-      Colors.red.withOpacity(0.1),
-      Colors.orange.withOpacity(0.1),
-      Colors.yellow.withOpacity(0.1),
-      Colors.blue.withOpacity(0.1),
+      Color(0xFFF04438).withOpacity(0.1),
+      Color(0xFFEF6820).withOpacity(0.1),
+      Color(0xFFFAC515).withOpacity(0.1),
+      Color(0xFF5976DE).withOpacity(0.1),
     ];
 
     List<LineChartBarData> lines = [];

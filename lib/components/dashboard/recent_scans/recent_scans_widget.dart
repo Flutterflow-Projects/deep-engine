@@ -51,9 +51,10 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
               Text(
                 'Recent scans',
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Readex Pro',
+                      fontFamily: 'Inter',
                       fontSize: 16.0,
                       letterSpacing: 0.0,
+                      fontWeight: FontWeight.w600,
                     ),
               ),
               MouseRegion(
@@ -71,11 +72,12 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                     Text(
                       'See all',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Inter',
                             color: _model.mouseRegionHovered1
                                 ? FlutterFlowTheme.of(context).textHover
                                 : FlutterFlowTheme.of(context).textTertiary600,
                             letterSpacing: 0.0,
+                            fontWeight: FontWeight.w600,
                           ),
                     ),
                     Icon(
@@ -108,7 +110,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                     child: Text(
                       'Type',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Inter',
                             color: _model.mouseRegionHovered2
                                 ? FlutterFlowTheme.of(context).textHover
                                 : FlutterFlowTheme.of(context).textTertiary600,
@@ -131,7 +133,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                     child: Text(
                       'Last updated',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Inter',
                             color: _model.mouseRegionHovered3
                                 ? FlutterFlowTheme.of(context).textHover
                                 : FlutterFlowTheme.of(context).textTertiary600,
@@ -194,7 +196,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
                                         ),
@@ -204,7 +206,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           color: FlutterFlowTheme.of(context)
                                               .textTertiary600,
                                           letterSpacing: 0.0,
@@ -293,7 +295,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
                                         ),
@@ -303,7 +305,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           color: FlutterFlowTheme.of(context)
                                               .textTertiary600,
                                           letterSpacing: 0.0,
@@ -345,7 +347,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
                                         ),
@@ -355,7 +357,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           color: FlutterFlowTheme.of(context)
                                               .textTertiary600,
                                           letterSpacing: 0.0,
@@ -407,7 +409,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
                                         ),
@@ -417,7 +419,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           color: FlutterFlowTheme.of(context)
                                               .textTertiary600,
                                           letterSpacing: 0.0,
@@ -458,7 +460,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           letterSpacing: 0.0,
                                           fontWeight: FontWeight.w500,
                                         ),
@@ -468,7 +470,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           color: FlutterFlowTheme.of(context)
                                               .textTertiary600,
                                           letterSpacing: 0.0,

@@ -48,7 +48,7 @@ class _MonthlySummaryMobileWidgetState
           Text(
             'Monthly summary',
             style: FlutterFlowTheme.of(context).bodyMedium.override(
-                  fontFamily: 'Readex Pro',
+                  fontFamily: 'Inter',
                   fontSize: 16.0,
                   letterSpacing: 0.0,
                 ),
@@ -68,7 +68,7 @@ class _MonthlySummaryMobileWidgetState
                           'Issues found',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .textTertiary600,
                                     letterSpacing: 0.0,
@@ -83,7 +83,7 @@ class _MonthlySummaryMobileWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -114,7 +114,7 @@ class _MonthlySummaryMobileWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'Inter',
                                             color: FlutterFlowTheme.of(context)
                                                 .utilityError700,
                                             fontSize: 12.0,
@@ -145,7 +145,7 @@ class _MonthlySummaryMobileWidgetState
                           'Scans performed',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .textTertiary600,
                                     letterSpacing: 0.0,
@@ -160,7 +160,7 @@ class _MonthlySummaryMobileWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -191,7 +191,7 @@ class _MonthlySummaryMobileWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'Inter',
                                             color: FlutterFlowTheme.of(context)
                                                 .utilitySuccess700,
                                             fontSize: 12.0,
@@ -225,7 +225,7 @@ class _MonthlySummaryMobileWidgetState
                           'Targets affected',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .textTertiary600,
                                     letterSpacing: 0.0,
@@ -240,7 +240,7 @@ class _MonthlySummaryMobileWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -265,7 +265,7 @@ class _MonthlySummaryMobileWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'Inter',
                                             color: FlutterFlowTheme.of(context)
                                                 .textTertiary600,
                                             fontSize: 12.0,
@@ -296,7 +296,7 @@ class _MonthlySummaryMobileWidgetState
                           'Issues resolved',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .textTertiary600,
                                     letterSpacing: 0.0,
@@ -311,7 +311,7 @@ class _MonthlySummaryMobileWidgetState
                               style: FlutterFlowTheme.of(context)
                                   .bodyMedium
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     fontSize: 18.0,
                                     letterSpacing: 0.0,
                                   ),
@@ -342,7 +342,7 @@ class _MonthlySummaryMobileWidgetState
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'Inter',
                                             color: FlutterFlowTheme.of(context)
                                                 .utilityError700,
                                             fontSize: 12.0,

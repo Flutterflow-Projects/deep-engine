@@ -182,7 +182,7 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           color: FlutterFlowTheme.of(context)
                                               .textHover,
                                           letterSpacing: 0.0,
@@ -255,7 +255,7 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .titleSmall
                                                 .override(
-                                                  fontFamily: 'Readex Pro',
+                                                  fontFamily: 'Inter',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .textTertiary600,
@@ -328,17 +328,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Overview',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -401,17 +400,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Notifications',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -474,17 +472,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Analytics',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -547,17 +544,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Reports',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -631,7 +627,7 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .titleSmall
                                                 .override(
-                                                  fontFamily: 'Readex Pro',
+                                                  fontFamily: 'Inter',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .textTertiary600,
@@ -704,17 +700,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Overview',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -777,17 +772,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Notifications',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -850,17 +844,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Analytics',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -923,17 +916,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Reports',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1008,7 +1000,7 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .titleSmall
                                                 .override(
-                                                  fontFamily: 'Readex Pro',
+                                                  fontFamily: 'Inter',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .textTertiary600,
@@ -1081,17 +1073,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Overview',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1154,17 +1145,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Notifications',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1227,17 +1217,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Analytics',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1300,17 +1289,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Reports',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1386,7 +1374,7 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .titleSmall
                                                 .override(
-                                                  fontFamily: 'Readex Pro',
+                                                  fontFamily: 'Inter',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .textTertiary600,
@@ -1459,17 +1447,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Overview',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1532,17 +1519,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Notifications',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1605,17 +1591,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Analytics',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1678,17 +1663,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Reports',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1764,7 +1748,7 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                             style: FlutterFlowTheme.of(context)
                                                 .titleSmall
                                                 .override(
-                                                  fontFamily: 'Readex Pro',
+                                                  fontFamily: 'Inter',
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .textTertiary600,
@@ -1837,17 +1821,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Overview',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1910,17 +1893,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Notifications',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -1983,17 +1965,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Analytics',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -2056,17 +2037,16 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Reports',
-                                                style: FlutterFlowTheme.of(
-                                                        context)
-                                                    .titleSmall
-                                                    .override(
-                                                      fontFamily: 'Readex Pro',
-                                                      color:
-                                                          FlutterFlowTheme.of(
-                                                                  context)
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmall
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
                                                               .textTertiary600,
-                                                      letterSpacing: 0.0,
-                                                    ),
+                                                          letterSpacing: 0.0,
+                                                        ),
                                               ),
                                             ),
                                           ],
@@ -2124,7 +2104,7 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
                                           letterSpacing: 0.0,
@@ -2135,7 +2115,7 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
                                         .override(
-                                          fontFamily: 'Readex Pro',
+                                          fontFamily: 'Inter',
                                           color: FlutterFlowTheme.of(context)
                                               .textTertiary600,
                                           letterSpacing: 0.0,

@@ -104,7 +104,7 @@ class _IssuesNumberMobileCardWidgetState
                         style: FlutterFlowTheme.of(context)
                             .labelMedium
                             .override(
-                              fontFamily: 'Readex Pro',
+                              fontFamily: 'Inter',
                               color:
                                   FlutterFlowTheme.of(context).textTertiary600,
                               fontSize: 18.0,
@@ -122,7 +122,7 @@ class _IssuesNumberMobileCardWidgetState
                 '36',
               ),
               style: FlutterFlowTheme.of(context).labelMedium.override(
-                    fontFamily: 'Readex Pro',
+                    fontFamily: 'Inter',
                     color: FlutterFlowTheme.of(context).primaryText,
                     fontSize: 24.0,
                     letterSpacing: 0.0,

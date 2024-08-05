@@ -57,7 +57,7 @@ class _OpenIssuesWidgetState extends State<OpenIssuesWidget> {
                     Text(
                       'Recent issues',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Inter',
                             fontSize: 16.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w600,
@@ -81,11 +81,12 @@ class _OpenIssuesWidgetState extends State<OpenIssuesWidget> {
                     Text(
                       'See all',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Inter',
                             color: _model.mouseRegionHovered1
                                 ? FlutterFlowTheme.of(context).textHover
                                 : FlutterFlowTheme.of(context).textTertiary600,
                             letterSpacing: 0.0,
+                            fontWeight: FontWeight.w600,
                           ),
                     ),
                     Icon(
@@ -127,7 +128,7 @@ class _OpenIssuesWidgetState extends State<OpenIssuesWidget> {
                         'Severity',
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Readex Pro',
+                              fontFamily: 'Inter',
                               color: _model.mouseRegionHovered2
                                   ? FlutterFlowTheme.of(context).textHover
                                   : FlutterFlowTheme.of(context)
@@ -156,7 +157,7 @@ class _OpenIssuesWidgetState extends State<OpenIssuesWidget> {
                           'Description',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: _model.mouseRegionHovered3
                                         ? FlutterFlowTheme.of(context).textHover
                                         : FlutterFlowTheme.of(context)
@@ -186,7 +187,7 @@ class _OpenIssuesWidgetState extends State<OpenIssuesWidget> {
                           'Date',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: _model.mouseRegionHovered4
                                         ? FlutterFlowTheme.of(context).textHover
                                         : FlutterFlowTheme.of(context)
@@ -216,7 +217,7 @@ class _OpenIssuesWidgetState extends State<OpenIssuesWidget> {
                           'Location',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: _model.mouseRegionHovered5
                                         ? FlutterFlowTheme.of(context).textHover
                                         : FlutterFlowTheme.of(context)

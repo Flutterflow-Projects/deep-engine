@@ -37,9 +37,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, _) => const DashboardWidget(),
         ),
         FFRoute(
-          name: 'CreateAnAccount',
-          path: '/createAnAccount',
-          builder: (context, params) => const CreateAnAccountWidget(),
+          name: 'CreateAnAccountPasskey',
+          path: '/createAnAccountPasskey',
+          builder: (context, params) => const CreateAnAccountPasskeyWidget(),
         ),
         FFRoute(
           name: 'SignIn',
@@ -60,6 +60,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Dashboard',
           path: '/dashboard',
           builder: (context, params) => const DashboardWidget(),
+        ),
+        FFRoute(
+          name: 'CreateAnAccountSignUp',
+          path: '/createAnAccountSignUp',
+          builder: (context, params) => const CreateAnAccountSignUpWidget(),
+        ),
+        FFRoute(
+          name: 'WelcomeScreen',
+          path: '/welcomeScreen',
+          builder: (context, params) => const WelcomeScreenWidget(),
+        ),
+        FFRoute(
+          name: 'SignInPasskey',
+          path: '/signInPasskey',
+          builder: (context, params) => const SignInPasskeyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

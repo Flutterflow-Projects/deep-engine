@@ -49,7 +49,7 @@ class _IssuesNumberCardWidgetState extends State<IssuesNumberCardWidget> {
       child: Container(
         width: MediaQuery.sizeOf(context).width * 1.0,
         decoration: BoxDecoration(
-          color: FlutterFlowTheme.of(context).bgTertiary,
+          color: FlutterFlowTheme.of(context).secondaryBackground,
           borderRadius: BorderRadius.circular(8.0),
           border: Border.all(
             color: FlutterFlowTheme.of(context).borderPrimary,
@@ -95,7 +95,7 @@ class _IssuesNumberCardWidgetState extends State<IssuesNumberCardWidget> {
                       'Critical',
                     ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).textTertiary600,
                           letterSpacing: 0.0,
                         ),
@@ -106,10 +106,11 @@ class _IssuesNumberCardWidgetState extends State<IssuesNumberCardWidget> {
                       '2',
                     ),
                     style: FlutterFlowTheme.of(context).labelMedium.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).primaryText,
                           fontSize: 24.0,
                           letterSpacing: 0.0,
+                          fontWeight: FontWeight.w600,
                         ),
                   ),
                 ].divide(const SizedBox(height: 4.0)),

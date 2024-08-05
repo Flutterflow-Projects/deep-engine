@@ -58,7 +58,7 @@ class _RecentIssuesMobileWidgetState extends State<RecentIssuesMobileWidget> {
                     Text(
                       'Recent issues',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Inter',
                             fontSize: 16.0,
                             letterSpacing: 0.0,
                             fontWeight: FontWeight.w600,
@@ -82,7 +82,7 @@ class _RecentIssuesMobileWidgetState extends State<RecentIssuesMobileWidget> {
                     Text(
                       'See all',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Inter',
                             color: _model.mouseRegionHovered1
                                 ? FlutterFlowTheme.of(context).textHover
                                 : FlutterFlowTheme.of(context).textTertiary600,
@@ -128,7 +128,7 @@ class _RecentIssuesMobileWidgetState extends State<RecentIssuesMobileWidget> {
                         'Severity',
                         textAlign: TextAlign.center,
                         style: FlutterFlowTheme.of(context).bodyMedium.override(
-                              fontFamily: 'Readex Pro',
+                              fontFamily: 'Inter',
                               color: _model.mouseRegionHovered2
                                   ? FlutterFlowTheme.of(context).textHover
                                   : FlutterFlowTheme.of(context)
@@ -156,7 +156,7 @@ class _RecentIssuesMobileWidgetState extends State<RecentIssuesMobileWidget> {
                           'Description',
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: _model.mouseRegionHovered3
                                         ? FlutterFlowTheme.of(context).textHover
                                         : FlutterFlowTheme.of(context)

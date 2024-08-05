@@ -93,14 +93,14 @@ class _HeaderMobileWidgetState extends State<HeaderMobileWidget> {
                       decoration: InputDecoration(
                         labelStyle:
                             FlutterFlowTheme.of(context).labelMedium.override(
-                                  fontFamily: 'Readex Pro',
+                                  fontFamily: 'Inter',
                                   letterSpacing: 0.0,
                                 ),
                         hintText: 'Type in a keyword',
                         hintStyle: FlutterFlowTheme.of(context)
                             .labelMedium
                             .override(
-                              fontFamily: 'Readex Pro',
+                              fontFamily: 'Inter',
                               color:
                                   FlutterFlowTheme.of(context).textTertiary600,
                               letterSpacing: 0.0,
@@ -135,7 +135,7 @@ class _HeaderMobileWidgetState extends State<HeaderMobileWidget> {
                         ),
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily: 'Readex Pro',
+                            fontFamily: 'Inter',
                             letterSpacing: 0.0,
                           ),
                       validator:
@@ -249,7 +249,7 @@ class _HeaderMobileWidgetState extends State<HeaderMobileWidget> {
                 Text(
                   'Overview',
                   style: FlutterFlowTheme.of(context).headlineMedium.override(
-                        fontFamily: 'Outfit',
+                        fontFamily: 'Inter',
                         fontSize: 20.0,
                         letterSpacing: 0.0,
                         fontWeight: FontWeight.w600,
@@ -278,7 +278,7 @@ class _HeaderMobileWidgetState extends State<HeaderMobileWidget> {
                           color: FlutterFlowTheme.of(context).btnSecondaryBg,
                           textStyle:
                               FlutterFlowTheme.of(context).titleSmall.override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context)
                                         .btnSecondaryTextColor,
                                     letterSpacing: 0.0,
@@ -313,7 +313,7 @@ class _HeaderMobileWidgetState extends State<HeaderMobileWidget> {
                           textStyle: FlutterFlowTheme.of(context)
                               .titleSmall
                               .override(
-                                fontFamily: 'Readex Pro',
+                                fontFamily: 'Inter',
                                 color:
                                     FlutterFlowTheme.of(context).btnPrimaryText,
                                 letterSpacing: 0.0,
