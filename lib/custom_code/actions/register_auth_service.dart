@@ -12,14 +12,15 @@ import 'package:dio/browser.dart';
 import 'package:one_of/one_of.dart';
 import 'package:universal_html/html.dart';
 import 'package:ory_client/ory_client.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 Future registerAuthService() async {
   // Ory auth steps as per https://www.ory.sh/docs/getting-started/integrate-auth/flutter-web-redirect
 
-  //await dotenv.load(fileName: ".env");
-  //final baseUrl = dotenv.get("ORY_BASE_URL").toString();
+  await dotenv.load(fileName: ".env");
+  final baseUrl = dotenv.get("ORY_BASE_URL").toString();
 
-  final baseUrl = "http://localhost:3005";
+  //final baseUrl = "http://localhost:3005";
 
   // create the dio client for http requests
   final options = BaseOptions(
