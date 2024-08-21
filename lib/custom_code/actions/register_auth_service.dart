@@ -236,7 +236,7 @@ class AuthService {
     }
   }
 
-  Future<dynamic?> logoutUser() async {
+  /*Future<dynamic?> logoutUser() async {
     try {
       Response response = await _dio.get('/self-service/logout/browser');
       print(response.data);
@@ -245,7 +245,7 @@ class AuthService {
       print(error.toString());
       return null;
     }
-  }
+  }*/
 
   get identity => _identity;
 }
