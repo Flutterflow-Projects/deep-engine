@@ -34,7 +34,7 @@ Future oryCreateBrowserLoginFlow(
     if (passkeyLogin == null) return;
     print("passkeyLogin");
     final loginResult = await AuthService().updateBrowserLoginFlow(
-        FFAppState().oryFlowId, email, passkeyLogin, FFAppState().oryCsrfToken);
+        FFAppState().oryFlowId, passkeyLogin, FFAppState().oryCsrfToken);
 
     if (loginResult == null) {
       onError!.call("You might have already used this passkey.");

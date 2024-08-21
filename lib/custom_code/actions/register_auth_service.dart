@@ -201,8 +201,7 @@ class AuthService {
     }
   }
 
-  Future<Object?> updateBrowserLoginFlow(
-      flow, email, passkeyLogin, csrfToken) async {
+  Future<Object?> updateBrowserLoginFlow(flow, passkeyLogin, csrfToken) async {
     try {
       final OneOf oneOf;
       /*oneOf = OneOf.fromValue1(
