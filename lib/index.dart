@@ -11,5 +11,3 @@ export '/pages/auth/create_an_account_sign_up/create_an_account_sign_up_widget.d
     show CreateAnAccountSignUpWidget;
 export '/pages/auth/welcome_screen/welcome_screen_widget.dart'
     show WelcomeScreenWidget;
-export '/pages/auth/sign_in_passkey/sign_in_passkey_widget.dart'
-    show SignInPasskeyWidget;

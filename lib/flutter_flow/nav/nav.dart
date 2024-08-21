@@ -70,11 +70,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'WelcomeScreen',
           path: '/welcomeScreen',
           builder: (context, params) => const WelcomeScreenWidget(),
-        ),
-        FFRoute(
-          name: 'SignInPasskey',
-          path: '/signInPasskey',
-          builder: (context, params) => const SignInPasskeyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
