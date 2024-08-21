@@ -49,20 +49,7 @@ class _SignInWidgetState extends State<SignInWidget> {
           );
         },
         () async {
-          await showDialog(
-            context: context,
-            builder: (alertDialogContext) {
-              return AlertDialog(
-                content: const Text('Success'),
-                actions: [
-                  TextButton(
-                    onPressed: () => Navigator.pop(alertDialogContext),
-                    child: const Text('Ok'),
-                  ),
-                ],
-              );
-            },
-          );
+          context.goNamed('Dashboard');
         },
       );
     });
