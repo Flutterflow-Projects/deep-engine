@@ -179,17 +179,17 @@ class AuthService {
       flow, email, passkeyRegister, csrfToken) async {
     try {
       final OneOf oneOf;
-      /*oneOf = OneOf.fromValue1(
+      oneOf = OneOf.fromValue1(
           value: UpdateRegistrationFlowWithPasskeyMethod((b) => b
             ..csrfToken = csrfToken
             ..passkeyRegister = passkeyRegister
             ..traits = JsonObject({"email": email})
-            ..method = "passkey"));*/
+            ..method = "passkey"));
 
       final resp = await _ory.updateRegistrationFlow(
           flow: flow,
           updateRegistrationFlowBody:
-              UpdateRegistrationFlowBody((b) => b /*b..oneOf = oneOf*/));
+              UpdateRegistrationFlowBody((b) => b..oneOf = oneOf));
 
       return resp.data;
     } catch (error) {
@@ -202,19 +202,19 @@ class AuthService {
   }
 
   Future<Object?> updateBrowserLoginFlow(
-      flow, email, passkeyLogin, csrfToken) async {
+      flow, passkeyLogin, csrfToken) async {
     try {
       final OneOf oneOf;
-      /*oneOf = OneOf.fromValue1(
+      oneOf = OneOf.fromValue1(
           value: UpdateLoginFlowWithPasskeyMethod((b) => b
             ..csrfToken = csrfToken
             ..passkeyLogin = passkeyLogin.toString()
-            ..method = "passkey"));*/
+            ..method = "passkey"));
 
       final resp = await _ory.updateLoginFlow(
           flow: flow,
           updateLoginFlowBody:
-              UpdateLoginFlowBody((b) => b /*b..oneOf = oneOf*/));
+              UpdateLoginFlowBody((b) => b..oneOf = oneOf));
 
       return resp.data;
     } catch (error) {
