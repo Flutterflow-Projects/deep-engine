@@ -1,3 +1,4 @@
+import '/custom_code/actions/index.dart' as actions;
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
@@ -15,6 +16,10 @@ void main() async {
 
   final appState = FFAppState(); // Initialize FFAppState
   await appState.initializePersistedState();
+
+  // Start final custom actions code
+  await actions.registerAuthService();
+  // End final custom actions code
 
   runApp(ChangeNotifierProvider(
     create: (context) => appState,
