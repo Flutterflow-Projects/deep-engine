@@ -30,6 +30,7 @@ Future oryCreateBrowserRegistrationFlow(
     var passkeyRegister = jsonMap['passkey_register'];
     var email = jsonMap['email'];
 
+    if (passkeyRegister == null) return;
     final registrationResult = await AuthService()
         .updateBrowserRegistrationFlow(FFAppState().oryFlowId, email,
             passkeyRegister, FFAppState().oryCsrfToken);

@@ -6,7 +6,6 @@ class CreateAnAccountSignUpModel
     extends FlutterFlowModel<CreateAnAccountSignUpWidget> {
   ///  State fields for stateful widgets in this page.
 
-  final unfocusNode = FocusNode();
   // State field(s) for Name widget.
   FocusNode? nameFocusNode;
   TextEditingController? nameTextController;
@@ -41,7 +40,6 @@ class CreateAnAccountSignUpModel
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     nameFocusNode?.dispose();
     nameTextController?.dispose();
 

@@ -1,10 +1,13 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 import 'sign_in_model.dart';
 export 'sign_in_model.dart';
 
@@ -25,6 +28,45 @@ class _SignInWidgetState extends State<SignInWidget> {
     super.initState();
     _model = createModel(context, () => SignInModel());
 
+    // On page load action.
+    SchedulerBinding.instance.addPostFrameCallback((_) async {
+      await actions.oryCreateBrowserLoginFlow(
+        (errorMsg) async {
+          await showDialog(
+            context: context,
+            builder: (alertDialogContext) {
+              return AlertDialog(
+                title: const Text('Error'),
+                content: const Text('Something went wrong'),
+                actions: [
+                  TextButton(
+                    onPressed: () => Navigator.pop(alertDialogContext),
+                    child: const Text('Ok'),
+                  ),
+                ],
+              );
+            },
+          );
+        },
+        () async {
+          await showDialog(
+            context: context,
+            builder: (alertDialogContext) {
+              return AlertDialog(
+                content: const Text('Success'),
+                actions: [
+                  TextButton(
+                    onPressed: () => Navigator.pop(alertDialogContext),
+                    child: const Text('Ok'),
+                  ),
+                ],
+              );
+            },
+          );
+        },
+      );
+    });
+
     _model.emailTextController ??= TextEditingController();
     _model.emailFocusNode ??= FocusNode();
 
@@ -43,10 +85,10 @@ class _SignInWidgetState extends State<SignInWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.black,
@@ -109,8 +151,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                 ))
                                   Container(
                                     decoration: BoxDecoration(
-                                      color: FlutterFlowTheme.of(context)
-                                          .bgTertiary,
+                                      color: const Color(0xFF191919),
                                       borderRadius: BorderRadius.circular(16.0),
                                     ),
                                     child: Padding(
@@ -407,8 +448,10 @@ class _SignInWidgetState extends State<SignInWidget> {
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 16.0, 0.0, 0.0),
                                     child: FFButtonWidget(
-                                      onPressed: () {
-                                        print('Button pressed ...');
+                                      onPressed: () async {
+                                        await actions.oryWebPasskeyLogin(
+                                          FFAppState().oryPasskeyCreateData,
+                                        );
                                       },
                                       text: 'Sign in using Passkey',
                                       options: FFButtonOptions(
@@ -510,6 +553,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                             icon: const FaIcon(
                                               FontAwesomeIcons.google,
                                               color: Color(0xFFCECECE),
+                                              size: 15.0,
                                             ),
                                             options: FFButtonOptions(
                                               width: double.infinity,
@@ -598,6 +642,7 @@ class _SignInWidgetState extends State<SignInWidget> {
                                             icon: const FaIcon(
                                               FontAwesomeIcons.github,
                                               color: Color(0xFFCECECE),
+                                              size: 15.0,
                                             ),
                                             options: FFButtonOptions(
                                               width: double.infinity,

@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:provider/provider.dart';
 import 'sign_in_passkey_model.dart';
 export 'sign_in_passkey_model.dart';
 
@@ -80,10 +81,10 @@ class _SignInPasskeyWidgetState extends State<SignInPasskeyWidget> {
 
   @override
   Widget build(BuildContext context) {
+    context.watch<FFAppState>();
+
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.black,
@@ -143,21 +144,25 @@ class _SignInPasskeyWidgetState extends State<SignInPasskeyWidget> {
                                 tabletLandscape: false,
                                 desktop: false,
                               ))
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color:
-                                        FlutterFlowTheme.of(context).bgTertiary,
-                                    borderRadius: BorderRadius.circular(16.0),
-                                  ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(8.0),
-                                      child: Image.asset(
-                                        'assets/images/hero-pic-mob.png',
-                                        width: 300.0,
-                                        height: 109.0,
-                                        fit: BoxFit.contain,
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 24.0),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF191919),
+                                      borderRadius: BorderRadius.circular(16.0),
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: ClipRRect(
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                        child: Image.asset(
+                                          'assets/images/hero-pic-mob.png',
+                                          width: 300.0,
+                                          height: 109.0,
+                                          fit: BoxFit.contain,
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -374,8 +379,7 @@ class _SignInPasskeyWidgetState extends State<SignInPasskeyWidget> {
                                   child: FFButtonWidget(
                                     onPressed: () async {
                                       await actions.oryWebPasskeyLogin(
-                                        _model.emailTextController.text,
-                                        '123',
+                                        FFAppState().oryPasskeyCreateData,
                                       );
                                     },
                                     text: 'Sign up using Passkey',
@@ -486,6 +490,7 @@ class _SignInPasskeyWidgetState extends State<SignInPasskeyWidget> {
                                           icon: const FaIcon(
                                             FontAwesomeIcons.google,
                                             color: Color(0xFFCECECE),
+                                            size: 15.0,
                                           ),
                                           options: FFButtonOptions(
                                             width: double.infinity,
@@ -573,6 +578,7 @@ class _SignInPasskeyWidgetState extends State<SignInPasskeyWidget> {
                                           icon: const FaIcon(
                                             FontAwesomeIcons.github,
                                             color: Color(0xFFCECECE),
+                                            size: 15.0,
                                           ),
                                           options: FFButtonOptions(
                                             width: double.infinity,

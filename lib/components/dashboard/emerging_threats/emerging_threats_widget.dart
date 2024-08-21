@@ -50,6 +50,7 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
                   fontFamily: 'Inter',
                   fontSize: 16.0,
                   letterSpacing: 0.0,
+                  fontWeight: FontWeight.w600,
                 ),
           ),
           Column(
@@ -102,9 +103,8 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
                               FontAwesomeIcons.externalLinkAlt,
                               color: _model.mouseRegionHovered1
                                   ? FlutterFlowTheme.of(context).textHover
-                                  : FlutterFlowTheme.of(context)
-                                      .textTertiary600,
-                              size: 20.0,
+                                  : FlutterFlowTheme.of(context).iconColor,
+                              size: 15.0,
                             ),
                           ].divide(const SizedBox(width: 8.0)),
                         ),
@@ -177,9 +177,8 @@ class _EmergingThreatsWidgetState extends State<EmergingThreatsWidget> {
                               FontAwesomeIcons.externalLinkAlt,
                               color: _model.mouseRegionHovered2
                                   ? FlutterFlowTheme.of(context).textHover
-                                  : FlutterFlowTheme.of(context)
-                                      .textTertiary600,
-                              size: 20.0,
+                                  : FlutterFlowTheme.of(context).iconColor,
+                              size: 15.0,
                             ),
                           ].divide(const SizedBox(width: 8.0)),
                         ),

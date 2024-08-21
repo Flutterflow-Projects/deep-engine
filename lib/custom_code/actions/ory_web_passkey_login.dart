@@ -9,9 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:universal_html/js.dart' as js;
 
 Future oryWebPasskeyLogin(
-  String email,
   String passkeyCreateData,
 ) async {
   // Add your function code here!
-  js.context.callMethod("__oryPasskeyLogin", [email, passkeyCreateData]);
+  js.context.callMethod("__oryPasskeyLogin", [passkeyCreateData]);
 }

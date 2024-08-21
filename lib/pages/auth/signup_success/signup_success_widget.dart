@@ -36,9 +36,7 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.black,
@@ -77,12 +75,11 @@ class _SignupSuccessWidgetState extends State<SignupSuccessWidget> {
                                         .successSecondaryBg,
                                     shape: BoxShape.circle,
                                   ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(12.0),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(12.0),
                                     child: FaIcon(
                                       FontAwesomeIcons.checkCircle,
-                                      color: FlutterFlowTheme.of(context)
-                                          .utilitySuccess700,
+                                      color: Color(0xFF75E0A7),
                                       size: 30.0,
                                     ),
                                   ),

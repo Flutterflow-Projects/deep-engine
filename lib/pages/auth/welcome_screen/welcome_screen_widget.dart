@@ -64,9 +64,7 @@ class _WelcomeScreenWidgetState extends State<WelcomeScreenWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.black,
@@ -126,21 +124,26 @@ class _WelcomeScreenWidgetState extends State<WelcomeScreenWidget> {
                                 tabletLandscape: false,
                                 desktop: false,
                               ))
-                                Container(
-                                  decoration: BoxDecoration(
-                                    color:
-                                        FlutterFlowTheme.of(context).bgTertiary,
-                                    borderRadius: BorderRadius.circular(16.0),
-                                  ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(8.0),
-                                    child: ClipRRect(
-                                      borderRadius: BorderRadius.circular(8.0),
-                                      child: Image.asset(
-                                        'assets/images/hero-pic-mob.png',
-                                        width: 300.0,
-                                        height: 109.0,
-                                        fit: BoxFit.contain,
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 0.0, 24.0),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: FlutterFlowTheme.of(context)
+                                          .bgTertiary,
+                                      borderRadius: BorderRadius.circular(16.0),
+                                    ),
+                                    child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: ClipRRect(
+                                        borderRadius:
+                                            BorderRadius.circular(8.0),
+                                        child: Image.asset(
+                                          'assets/images/hero-pic-mob.png',
+                                          width: 300.0,
+                                          height: 109.0,
+                                          fit: BoxFit.contain,
+                                        ),
                                       ),
                                     ),
                                   ),

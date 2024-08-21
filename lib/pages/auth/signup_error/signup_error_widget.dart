@@ -35,9 +35,7 @@ class _SignupErrorWidgetState extends State<SignupErrorWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.black,
@@ -75,12 +73,11 @@ class _SignupErrorWidgetState extends State<SignupErrorWidget> {
                                     color: FlutterFlowTheme.of(context).accent1,
                                     shape: BoxShape.circle,
                                   ),
-                                  child: Padding(
-                                    padding: const EdgeInsets.all(12.0),
+                                  child: const Padding(
+                                    padding: EdgeInsets.all(12.0),
                                     child: Icon(
                                       Icons.error_outline_rounded,
-                                      color: FlutterFlowTheme.of(context)
-                                          .utilityError700,
+                                      color: Color(0xFFFDA29B),
                                       size: 30.0,
                                     ),
                                   ),
@@ -98,7 +95,7 @@ class _SignupErrorWidgetState extends State<SignupErrorWidget> {
                                       ),
                                 ),
                                 Text(
-                                  'Check your Passkey or use a different\nverification nethod',
+                                  'Check your Passkey or use a different\nverification method',
                                   textAlign: TextAlign.center,
                                   style: FlutterFlowTheme.of(context)
                                       .bodyMedium
