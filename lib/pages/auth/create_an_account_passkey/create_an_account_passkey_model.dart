@@ -7,7 +7,6 @@ class CreateAnAccountPasskeyModel
     extends FlutterFlowModel<CreateAnAccountPasskeyWidget> {
   ///  State fields for stateful widgets in this page.
 
-  final unfocusNode = FocusNode();
   // State field(s) for Email widget.
   FocusNode? emailFocusNode;
   TextEditingController? emailTextController;
@@ -20,7 +19,6 @@ class CreateAnAccountPasskeyModel
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     emailFocusNode?.dispose();
     emailTextController?.dispose();
   }

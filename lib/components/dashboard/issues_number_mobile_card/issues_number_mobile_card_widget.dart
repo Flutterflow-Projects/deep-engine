@@ -48,9 +48,9 @@ class _IssuesNumberMobileCardWidgetState
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.sizeOf(context).width * 1.0,
-      height: 70.0,
+      height: 52.0,
       decoration: BoxDecoration(
-        color: FlutterFlowTheme.of(context).bgTertiary,
+        color: FlutterFlowTheme.of(context).secondaryBackground,
         borderRadius: BorderRadius.circular(8.0),
         border: Border.all(
           color: FlutterFlowTheme.of(context).borderPrimary,
@@ -58,14 +58,14 @@ class _IssuesNumberMobileCardWidgetState
         ),
       ),
       child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 10.0, 16.0, 10.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 6.0, 0.0),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Row(
-              mainAxisSize: MainAxisSize.max,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
@@ -107,8 +107,9 @@ class _IssuesNumberMobileCardWidgetState
                               fontFamily: 'Inter',
                               color:
                                   FlutterFlowTheme.of(context).textTertiary600,
-                              fontSize: 18.0,
+                              fontSize: 14.0,
                               letterSpacing: 0.0,
+                              fontWeight: FontWeight.w500,
                             ),
                       ),
                     ),
@@ -116,17 +117,21 @@ class _IssuesNumberMobileCardWidgetState
                 ),
               ],
             ),
-            Text(
-              valueOrDefault<String>(
-                widget.number?.toString(),
-                '36',
+            Padding(
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 8.0, 0.0),
+              child: Text(
+                valueOrDefault<String>(
+                  widget.number?.toString(),
+                  '36',
+                ),
+                style: FlutterFlowTheme.of(context).labelMedium.override(
+                      fontFamily: 'Inter',
+                      color: FlutterFlowTheme.of(context).primaryText,
+                      fontSize: 18.0,
+                      letterSpacing: 0.0,
+                      fontWeight: FontWeight.w600,
+                    ),
               ),
-              style: FlutterFlowTheme.of(context).labelMedium.override(
-                    fontFamily: 'Inter',
-                    color: FlutterFlowTheme.of(context).primaryText,
-                    fontSize: 24.0,
-                    letterSpacing: 0.0,
-                  ),
             ),
           ].divide(const SizedBox(width: 8.0)),
         ),

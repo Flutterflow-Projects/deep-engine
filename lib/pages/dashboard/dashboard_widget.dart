@@ -18,8 +18,6 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/custom_code/actions/index.dart' as actions;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dashboard_model.dart';
 export 'dashboard_model.dart';
 
@@ -64,9 +62,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
@@ -137,8 +133,12 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           8.0),
-                                                  child: SvgPicture.asset(
-                                                    'assets/images/logo-wordmark.svg',
+                                                  child: Image.asset(
+                                                    Theme.of(context)
+                                                                .brightness ==
+                                                            Brightness.dark
+                                                        ? 'assets/images/logo-wordmark.svg'
+                                                        : 'assets/images/Logo.png',
                                                     width: 192.0,
                                                     height: 37.0,
                                                     fit: BoxFit.contain,
@@ -153,7 +153,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
-                                        16.0, 0.0, 16.0, 12.0),
+                                        16.0, 0.0, 16.0, 0.0),
                                     child: Container(
                                       width: double.infinity,
                                       height: 50.0,
@@ -164,7 +164,8 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                             BorderRadius.circular(12.0),
                                         shape: BoxShape.rectangle,
                                         border: Border.all(
-                                          width: 1.0,
+                                          color: Colors.transparent,
+                                          width: 0.0,
                                         ),
                                       ),
                                       child: Padding(
@@ -174,10 +175,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Icon(
-                                              Icons.bar_chart_sharp,
+                                              FFIcons.kbarChart,
                                               color:
                                                   FlutterFlowTheme.of(context)
-                                                      .textHover,
+                                                      .iconColor,
                                               size: 24.0,
                                             ),
                                             Padding(
@@ -221,7 +222,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                         child: Padding(
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 12.0),
+                                                  16.0, 0.0, 16.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -261,12 +262,11 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       MainAxisSize.max,
                                                   children: [
                                                     Icon(
-                                                      Icons
-                                                          .error_outline_rounded,
+                                                      FFIcons.koctagon,
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .secondaryText,
+                                                              .iconColor,
                                                       size: 24.0,
                                                     ),
                                                     Padding(
@@ -683,7 +683,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                         child: Padding(
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 12.0),
+                                                  16.0, 0.0, 16.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -723,12 +723,11 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       MainAxisSize.max,
                                                   children: [
                                                     Icon(
-                                                      Icons
-                                                          .error_outline_rounded,
+                                                      FFIcons.kgrid,
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .secondaryText,
+                                                              .iconColor,
                                                       size: 24.0,
                                                     ),
                                                     Padding(
@@ -1145,7 +1144,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                         child: Padding(
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 12.0),
+                                                  16.0, 0.0, 16.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -1185,12 +1184,11 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       MainAxisSize.max,
                                                   children: [
                                                     Icon(
-                                                      Icons
-                                                          .document_scanner_rounded,
+                                                      FFIcons.kscan,
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .secondaryText,
+                                                              .iconColor,
                                                       size: 24.0,
                                                     ),
                                                     Padding(
@@ -1607,7 +1605,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                         child: Padding(
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 12.0),
+                                                  16.0, 0.0, 16.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -1646,13 +1644,12 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                   mainAxisSize:
                                                       MainAxisSize.max,
                                                   children: [
-                                                    FaIcon(
-                                                      FontAwesomeIcons
-                                                          .calendarMinus,
+                                                    Icon(
+                                                      FFIcons.kcalendar,
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .secondaryText,
+                                                              .iconColor,
                                                       size: 24.0,
                                                     ),
                                                     Padding(
@@ -2069,7 +2066,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                         child: Padding(
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
-                                                  16.0, 0.0, 16.0, 12.0),
+                                                  16.0, 0.0, 16.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -2109,11 +2106,11 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                       MainAxisSize.max,
                                                   children: [
                                                     Icon(
-                                                      Icons.bar_chart_outlined,
+                                                      FFIcons.kfile,
                                                       color:
                                                           FlutterFlowTheme.of(
                                                                   context)
-                                                              .secondaryText,
+                                                              .iconColor,
                                                       size: 24.0,
                                                     ),
                                                     Padding(
@@ -2527,8 +2524,13 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                 Container(
                                   width: double.infinity,
                                   decoration: BoxDecoration(
-                                    color:
-                                        FlutterFlowTheme.of(context).bgTertiary,
+                                    color: const Color(0xFF191919),
+                                    image: DecorationImage(
+                                      fit: BoxFit.cover,
+                                      image: Image.asset(
+                                        'assets/images/banner-img.png',
+                                      ).image,
+                                    ),
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   child: Padding(
@@ -2550,19 +2552,15 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                   .bodyMedium
                                                   .override(
                                                     fontFamily: 'Inter',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .primaryText,
+                                                    color: const Color(0xFFF7F7F7),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
                                                   ),
                                             ),
-                                            Icon(
+                                            const Icon(
                                               Icons.close_rounded,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .textTertiary600,
+                                              color: Color(0xFF868686),
                                               size: 24.0,
                                             ),
                                           ],
@@ -2578,9 +2576,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                 .bodyMedium
                                                 .override(
                                                   fontFamily: 'Inter',
-                                                  color: FlutterFlowTheme.of(
-                                                          context)
-                                                      .textTertiary600,
+                                                  color: const Color(0xFF868686),
                                                   fontSize: 14.0,
                                                   letterSpacing: 0.0,
                                                 ),
@@ -2605,9 +2601,7 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                                   .bodyMedium
                                                   .override(
                                                     fontFamily: 'Inter',
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryText,
+                                                    color: const Color(0xFFCECECE),
                                                     fontSize: 16.0,
                                                     letterSpacing: 0.0,
                                                     fontWeight: FontWeight.w500,
@@ -2638,7 +2632,10 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                           borderRadius:
                                               BorderRadius.circular(24.0),
                                           child: Image.asset(
-                                            'assets/images/Figma_Image_320x320.jpeg',
+                                            Theme.of(context).brightness ==
+                                                    Brightness.dark
+                                                ? 'assets/images/Figma_Image_320x320.jpeg'
+                                                : 'assets/images/Figma_Image_320x320.jpeg',
                                             width: 40.0,
                                             height: 40.0,
                                             fit: BoxFit.cover,
@@ -2754,37 +2751,45 @@ class _DashboardWidgetState extends State<DashboardWidget> {
                                           Flexible(
                                             child: Container(
                                               decoration: const BoxDecoration(),
-                                              child: SingleChildScrollView(
-                                                child: Column(
-                                                  mainAxisSize:
-                                                      MainAxisSize.min,
-                                                  crossAxisAlignment:
-                                                      CrossAxisAlignment.start,
-                                                  children: [
-                                                    wrapWithModel(
-                                                      model: _model
-                                                          .openIssuesNumbersModel,
-                                                      updateCallback: () =>
-                                                          setState(() {}),
-                                                      child:
-                                                          const OpenIssuesNumbersWidget(),
-                                                    ),
-                                                    wrapWithModel(
-                                                      model: _model
-                                                          .openIssuesModel,
-                                                      updateCallback: () =>
-                                                          setState(() {}),
-                                                      child: const OpenIssuesWidget(),
-                                                    ),
-                                                    wrapWithModel(
-                                                      model:
-                                                          _model.riskTrendModel,
-                                                      updateCallback: () =>
-                                                          setState(() {}),
-                                                      child: const RiskTrendWidget(),
-                                                    ),
-                                                  ].divide(
-                                                      const SizedBox(height: 8.0)),
+                                              child: Padding(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        16.0, 0.0, 0.0, 0.0),
+                                                child: SingleChildScrollView(
+                                                  child: Column(
+                                                    mainAxisSize:
+                                                        MainAxisSize.min,
+                                                    crossAxisAlignment:
+                                                        CrossAxisAlignment
+                                                            .start,
+                                                    children: [
+                                                      wrapWithModel(
+                                                        model: _model
+                                                            .openIssuesNumbersModel,
+                                                        updateCallback: () =>
+                                                            setState(() {}),
+                                                        child:
+                                                            const OpenIssuesNumbersWidget(),
+                                                      ),
+                                                      wrapWithModel(
+                                                        model: _model
+                                                            .openIssuesModel,
+                                                        updateCallback: () =>
+                                                            setState(() {}),
+                                                        child:
+                                                            const OpenIssuesWidget(),
+                                                      ),
+                                                      wrapWithModel(
+                                                        model: _model
+                                                            .riskTrendModel,
+                                                        updateCallback: () =>
+                                                            setState(() {}),
+                                                        child:
+                                                            const RiskTrendWidget(),
+                                                      ),
+                                                    ].divide(
+                                                        const SizedBox(height: 8.0)),
+                                                  ),
                                                 ),
                                               ),
                                             ),

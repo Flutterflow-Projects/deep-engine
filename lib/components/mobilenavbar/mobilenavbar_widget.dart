@@ -2,8 +2,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'mobilenavbar_model.dart';
 export 'mobilenavbar_model.dart';
 
@@ -120,8 +118,11 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                   children: [
                                     ClipRRect(
                                       borderRadius: BorderRadius.circular(8.0),
-                                      child: SvgPicture.asset(
-                                        'assets/images/logo-wordmark.svg',
+                                      child: Image.asset(
+                                        Theme.of(context).brightness ==
+                                                Brightness.dark
+                                            ? 'assets/images/logo-wordmark.svg'
+                                            : 'assets/images/Logo.png',
                                         width: 192.0,
                                         height: 37.0,
                                         fit: BoxFit.contain,
@@ -160,6 +161,7 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                             borderRadius: BorderRadius.circular(12.0),
                             shape: BoxShape.rectangle,
                             border: Border.all(
+                              color: Colors.transparent,
                               width: 1.0,
                             ),
                           ),
@@ -170,8 +172,8 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Icon(
-                                  Icons.bar_chart_sharp,
-                                  color: FlutterFlowTheme.of(context).textHover,
+                                  FFIcons.kbarChart,
+                                  color: FlutterFlowTheme.of(context).iconColor,
                                   size: 24.0,
                                 ),
                                 Padding(
@@ -241,9 +243,9 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Icon(
-                                          Icons.error_outline_rounded,
+                                          FFIcons.koctagon,
                                           color: FlutterFlowTheme.of(context)
-                                              .textTertiary600,
+                                              .iconColor,
                                           size: 24.0,
                                         ),
                                         Padding(
@@ -613,9 +615,9 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Icon(
-                                          Icons.error_outline_rounded,
+                                          FFIcons.kgrid,
                                           color: FlutterFlowTheme.of(context)
-                                              .textTertiary600,
+                                              .iconColor,
                                           size: 24.0,
                                         ),
                                         Padding(
@@ -986,9 +988,9 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Icon(
-                                          Icons.document_scanner_rounded,
+                                          FFIcons.kscan,
                                           color: FlutterFlowTheme.of(context)
-                                              .textTertiary600,
+                                              .iconColor,
                                           size: 24.0,
                                         ),
                                         Padding(
@@ -1359,10 +1361,10 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
-                                        FaIcon(
-                                          FontAwesomeIcons.calendarMinus,
+                                        Icon(
+                                          FFIcons.kcalendar,
                                           color: FlutterFlowTheme.of(context)
-                                              .textTertiary600,
+                                              .iconColor,
                                           size: 24.0,
                                         ),
                                         Padding(
@@ -1734,9 +1736,9 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                                       mainAxisSize: MainAxisSize.max,
                                       children: [
                                         Icon(
-                                          Icons.bar_chart_outlined,
+                                          FFIcons.kfile,
                                           color: FlutterFlowTheme.of(context)
-                                              .textTertiary600,
+                                              .iconColor,
                                           size: 24.0,
                                         ),
                                         Padding(
@@ -2085,8 +2087,10 @@ class _MobilenavbarWidgetState extends State<MobilenavbarWidget> {
                           children: [
                             ClipRRect(
                               borderRadius: BorderRadius.circular(24.0),
-                              child: Image.network(
-                                'https://s3-alpha-sig.figma.com/img/91bc/9e11/99f636215e809a958a02f9815dab2751?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=caamiVPAbOYT6AFMdUuLtqkqE8P3nG3n1~fFshOOZvxAITanKDO64btIgU7dIenJ1Rp2kIA6cQfrDPE-HxKBbfu-n4oj644MYGLBIZc4dFAGj6h3K2cVNtVgw9zBIoD9QjT9nHbqBbXmyOurS4p-FbqWk6vjK0A1Azyg2f1HYGMvBMw17iMD-v6mFxvdAbkS60lwcer0R8J3Ib4xocm7YkfxuYCz7aaNZF02UGfiVP7jk8VmhKs-FhPrbQfTELMYUJcN8VzTfFD6fjW1LLFyxe6zFWytam4ZrT0tFeFN-kGdBuN3aUs2bF6goJbTXCNjsDkS8yP0RQ7eyhRpcH5sGg__',
+                              child: Image.asset(
+                                Theme.of(context).brightness == Brightness.dark
+                                    ? 'assets/images/Figma_Image_320x320.jpeg'
+                                    : 'assets/images/Figma_Image_320x320.jpeg',
                                 width: 40.0,
                                 height: 40.0,
                                 fit: BoxFit.cover,

@@ -73,9 +73,7 @@ class _CreateAnAccountPasskeyWidgetState
     context.watch<FFAppState>();
 
     return GestureDetector(
-      onTap: () => _model.unfocusNode.canRequestFocus
-          ? FocusScope.of(context).requestFocus(_model.unfocusNode)
-          : FocusScope.of(context).unfocus(),
+      onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: Colors.black,
@@ -137,8 +135,7 @@ class _CreateAnAccountPasskeyWidgetState
                               ))
                                 Container(
                                   decoration: BoxDecoration(
-                                    color:
-                                        FlutterFlowTheme.of(context).bgTertiary,
+                                    color: const Color(0xFF191919),
                                     borderRadius: BorderRadius.circular(16.0),
                                   ),
                                   child: Padding(
@@ -478,6 +475,7 @@ class _CreateAnAccountPasskeyWidgetState
                                           icon: const FaIcon(
                                             FontAwesomeIcons.google,
                                             color: Color(0xFFCECECE),
+                                            size: 15.0,
                                           ),
                                           options: FFButtonOptions(
                                             width: double.infinity,
@@ -565,6 +563,7 @@ class _CreateAnAccountPasskeyWidgetState
                                           icon: const FaIcon(
                                             FontAwesomeIcons.github,
                                             color: Color(0xFFCECECE),
+                                            size: 15.0,
                                           ),
                                           options: FFButtonOptions(
                                             width: double.infinity,
@@ -694,7 +693,7 @@ class _CreateAnAccountPasskeyWidgetState
                                         CrossAxisAlignment.start,
                                     children: [
                                       Text(
-                                        'Your always - on\nsecurity hund',
+                                        'Your always-on\nsecurity hund',
                                         style: FlutterFlowTheme.of(context)
                                             .bodyMedium
                                             .override(

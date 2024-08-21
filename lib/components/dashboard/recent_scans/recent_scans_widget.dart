@@ -183,8 +183,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                             children: [
                               FaIcon(
                                 FontAwesomeIcons.clock,
-                                color: FlutterFlowTheme.of(context)
-                                    .textTertiary600,
+                                color: FlutterFlowTheme.of(context).fgQuinary,
                                 size: 18.0,
                               ),
                               Column(
@@ -282,8 +281,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                             children: [
                               FaIcon(
                                 FontAwesomeIcons.calendarCheck,
-                                color: FlutterFlowTheme.of(context)
-                                    .textTertiary600,
+                                color: FlutterFlowTheme.of(context).fgQuinary,
                                 size: 18.0,
                               ),
                               Column(
@@ -396,8 +394,7 @@ class _RecentScansWidgetState extends State<RecentScansWidget> {
                             children: [
                               Icon(
                                 Icons.check_circle_outlined,
-                                color: FlutterFlowTheme.of(context)
-                                    .textTertiary600,
+                                color: FlutterFlowTheme.of(context).fgQuinary,
                                 size: 20.0,
                               ),
                               Column(

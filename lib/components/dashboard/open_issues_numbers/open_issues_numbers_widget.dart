@@ -100,7 +100,7 @@ class _OpenIssuesNumbersWidgetState extends State<OpenIssuesNumbersWidget> {
                   Icon(
                     Icons.error_outline_rounded,
                     color: FlutterFlowTheme.of(context).error,
-                    size: 24.0,
+                    size: 20.0,
                   ),
                   Text(
                     'Action needed',
@@ -167,7 +167,7 @@ class _OpenIssuesNumbersWidgetState extends State<OpenIssuesNumbersWidget> {
                     ),
                   ),
                 ]
-                    .divide(const SizedBox(width: 16.0))
+                    .divide(const SizedBox(width: 8.0))
                     .addToStart(const SizedBox(width: 16.0))
                     .addToEnd(const SizedBox(width: 16.0)),
               ),

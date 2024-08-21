@@ -61,7 +61,7 @@ class _SidebarWidgetState extends State<SidebarWidget> {
           ],
           borderRadius: BorderRadius.circular(0.0),
           border: Border.all(
-            color: FlutterFlowTheme.of(context).borderPrimary,
+            color: Colors.transparent,
           ),
         ),
         child: Padding(

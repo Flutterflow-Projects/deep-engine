@@ -83,6 +83,8 @@ abstract class FlutterFlowTheme {
   late Color utilityWarning500;
   late Color customColor1;
   late Color hoverBg;
+  late Color iconColor;
+  late Color fgQuinary;
 
   @Deprecated('Use displaySmallFamily instead')
   String get title1Family => displaySmallFamily;
@@ -169,7 +171,7 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color accent4 = const Color(0xFF5976DE);
   late Color success = const Color(0xFF249689);
   late Color warning = const Color(0xFFF9CF58);
-  late Color error = const Color(0xFFF97066);
+  late Color error = const Color(0xFFD92D20);
   late Color info = const Color(0xFFFFFFFF);
 
   late Color bgTertiary = const Color(0xFFF2F4F7);
@@ -191,7 +193,7 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color utilityError500 = const Color(0xFFF04438);
   late Color borderPrimary = const Color(0xFFEAECF0);
   late Color textTertiary600 = const Color(0xFF475467);
-  late Color utilityError700 = const Color(0xFFFDA29B);
+  late Color utilityError700 = const Color(0xFFB42318);
   late Color successSecondaryBg = const Color(0xFF079455);
   late Color textHover = const Color(0xFF182230);
   late Color utilityError200 = const Color(0xFFFECDCA);
@@ -201,6 +203,8 @@ class LightModeTheme extends FlutterFlowTheme {
   late Color utilityWarning500 = const Color(0xFFF79009);
   late Color customColor1 = const Color(0xFFEEE3D5);
   late Color hoverBg = const Color(0xFFE8E8E8);
+  late Color iconColor = const Color(0xFF667085);
+  late Color fgQuinary = const Color(0xFF98A2B3);
 }
 
 abstract class Typography {
@@ -402,6 +406,8 @@ class DarkModeTheme extends FlutterFlowTheme {
   late Color utilityWarning500 = const Color(0xFFF79009);
   late Color customColor1 = const Color(0xFFEEE3D5);
   late Color hoverBg = const Color(0xFF191919);
+  late Color iconColor = const Color(0xFFA1A1A1);
+  late Color fgQuinary = const Color(0xFF868686);
 }
 
 extension TextStyleHelper on TextStyle {

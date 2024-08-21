@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 class SignInPasskeyModel extends FlutterFlowModel<SignInPasskeyWidget> {
   ///  State fields for stateful widgets in this page.
 
-  final unfocusNode = FocusNode();
   // State field(s) for Email widget.
   FocusNode? emailFocusNode;
   TextEditingController? emailTextController;
@@ -18,7 +17,6 @@ class SignInPasskeyModel extends FlutterFlowModel<SignInPasskeyWidget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     emailFocusNode?.dispose();
     emailTextController?.dispose();
   }

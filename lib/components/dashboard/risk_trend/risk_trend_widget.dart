@@ -73,7 +73,7 @@ class _RiskTrendWidgetState extends State<RiskTrendWidget> {
                   width: 350.0,
                   height: 60.0,
                   activeTextColor: FlutterFlowTheme.of(context).secondaryText,
-                  activeTabBg: FlutterFlowTheme.of(context).btnSecondaryBg,
+                  activeTabBg: FlutterFlowTheme.of(context).secondaryBackground,
                   textColor: FlutterFlowTheme.of(context).textTertiary600,
                   borderColor: FlutterFlowTheme.of(context).borderPrimary,
                 ),

@@ -36,7 +36,6 @@ class DashboardModel extends FlutterFlowModel<DashboardWidget> {
 
   ///  State fields for stateful widgets in this page.
 
-  final unfocusNode = FocusNode();
   // State field(s) for MouseRegion widget.
   bool mouseRegionHovered1 = false;
   // State field(s) for MouseRegion widget.
@@ -149,7 +148,6 @@ class DashboardModel extends FlutterFlowModel<DashboardWidget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     headerModel.dispose();
     headerMobileModel.dispose();
     openIssuesNumbersModel.dispose();

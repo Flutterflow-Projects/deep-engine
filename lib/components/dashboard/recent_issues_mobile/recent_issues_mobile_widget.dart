@@ -133,7 +133,9 @@ class _RecentIssuesMobileWidgetState extends State<RecentIssuesMobileWidget> {
                                   ? FlutterFlowTheme.of(context).textHover
                                   : FlutterFlowTheme.of(context)
                                       .textTertiary600,
+                              fontSize: 12.0,
                               letterSpacing: 0.0,
+                              fontWeight: FontWeight.w500,
                             ),
                       ),
                     ),
@@ -161,7 +163,9 @@ class _RecentIssuesMobileWidgetState extends State<RecentIssuesMobileWidget> {
                                         ? FlutterFlowTheme.of(context).textHover
                                         : FlutterFlowTheme.of(context)
                                             .textTertiary600,
+                                    fontSize: 12.0,
                                     letterSpacing: 0.0,
+                                    fontWeight: FontWeight.w500,
                                   ),
                         ),
                       ),

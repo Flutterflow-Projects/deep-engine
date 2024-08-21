@@ -44,7 +44,7 @@ Future registerAuthService() async {
 
   final auth = AuthService(dio);
 
-  if (Uri.base.path != '/signIn') {
+  if (Uri.base.path != '/signIn' && Uri.base.path != '/signInPasskey') {
     if (!(await auth.isAuthenticated())) {
       _launchURL(baseUrl);
       return;
@@ -60,6 +60,7 @@ void _launchURL(String url) async {
 class AuthService {
   late final FrontendApi _ory;
   late final OryClient _client;
+  late final Dio _dio;
   Session? _identity;
 
   static final AuthService _singleton = AuthService._internal();
@@ -69,6 +70,7 @@ class AuthService {
     if (dio != null && !_singleton._isInitialized) {
       _singleton._client = OryClient(dio: dio);
       _singleton._ory = _singleton._client.getFrontendApi();
+      _singleton._dio = dio;
       _singleton._isInitialized = true;
     } else if (!_singleton._isInitialized) {
       throw ArgumentError(
@@ -134,6 +136,20 @@ class AuthService {
     }
   }
 
+  String getChallengeFromLoginFlow(dynamic loginFlow) {
+    final challenge = loginFlow["ui"]["nodes"].firstWhere((element) =>
+        element["attributes"]["name"].toString().contains("passkey_challenge"));
+
+    return challenge["attributes"]["value"].toString();
+  }
+
+  String getCSRFTokenFromLoginFlowByName(dynamic loginFlow) {
+    var node = loginFlow["ui"]["nodes"].firstWhere((element) =>
+        element["attributes"]["name"].toString().contains("csrf_token"));
+
+    return node["attributes"]["value"].toString();
+  }
+
   Future<RegistrationFlow?> createBrowserRegistrationFlow() async {
     try {
       final resp = await _ory.createBrowserRegistrationFlow();
@@ -163,17 +179,17 @@ class AuthService {
       flow, email, passkeyRegister, csrfToken) async {
     try {
       final OneOf oneOf;
-      oneOf = OneOf.fromValue1(
+      /*oneOf = OneOf.fromValue1(
           value: UpdateRegistrationFlowWithPasskeyMethod((b) => b
             ..csrfToken = csrfToken
             ..passkeyRegister = passkeyRegister
             ..traits = JsonObject({"email": email})
-            ..method = "passkey"));
+            ..method = "passkey"));*/
 
       final resp = await _ory.updateRegistrationFlow(
           flow: flow,
           updateRegistrationFlowBody:
-              UpdateRegistrationFlowBody((b) => b..oneOf = oneOf));
+              UpdateRegistrationFlowBody((b) => b /*b..oneOf = oneOf*/));
 
       return resp.data;
     } catch (error) {
@@ -182,6 +198,52 @@ class AuthService {
       } else {
         return null;
       }
+    }
+  }
+
+  Future<Object?> updateBrowserLoginFlow(
+      flow, email, passkeyLogin, csrfToken) async {
+    try {
+      final OneOf oneOf;
+      /*oneOf = OneOf.fromValue1(
+          value: UpdateLoginFlowWithPasskeyMethod((b) => b
+            ..csrfToken = csrfToken
+            ..passkeyLogin = passkeyLogin.toString()
+            ..method = "passkey"));*/
+
+      final resp = await _ory.updateLoginFlow(
+          flow: flow,
+          updateLoginFlowBody:
+              UpdateLoginFlowBody((b) => b /*b..oneOf = oneOf*/));
+
+      return resp.data;
+    } catch (error) {
+      if (error.toString().contains("Invalid argument(s): passkey")) {
+        return "Not an error, just sdk doesnt support passkey realy...";
+      } else {
+        return null;
+      }
+    }
+  }
+
+  Future<dynamic?> createBrowserLoginFlow() async {
+    try {
+      Response response = await _dio.get('/self-service/login/browser');
+      return response.data;
+    } catch (error) {
+      print(error.toString());
+      return null;
+    }
+  }
+
+  Future<dynamic?> logoutUser() async {
+    try {
+      Response response = await _dio.get('/self-service/logout/browser');
+      print(response.data);
+      return response.data;
+    } catch (error) {
+      print(error.toString());
+      return null;
     }
   }
 
